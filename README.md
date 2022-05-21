@@ -1,4 +1,4 @@
-# youtube-clone-frontend
+# Youtube-Clone-Frontend
 
 ------------
 ##The project has 2 parts: the Backend and the Frontend.
@@ -36,26 +36,31 @@
 ------------
 ## 3. Songs Player
 #### The user will be able to play songs in the app.
-![](https://i.imgur.com/7nmUnfv.png)
+![](https://i.imgur.com/RvgmVuX.png)
 
 #### -  The user will be able to see the history of played songs,
 #### -  Create songs playlist,
 #### - Add a song to the playlist,
+#### - View the playlist,
 #### - Like or Dislike a song,
 #### - Comment about the song
 
 ### 3.1. Played Songs History
 #### Songs in the history will be scolled vertically.
-![](https://i.imgur.com/11cWnEa.png)
+![](https://i.imgur.com/vCmh18Q.png)
 
 ### 3.2. Create the Playlist
 #### The user will be able able to create the playlist of  his or her favorite songs.
-![](https://i.imgur.com/43HBHIf.png)
+![](https://i.imgur.com/QKso9WY.png)
 
-### 3.3. Likes and Dislikes
+#### 3.3. View the playlist
+#### The user will be able to view and select songs in the playlist
+![](https://i.imgur.com/WOwsPHn.png)
+
+### 3.4. Likes and Dislikes
 #### The user will be able able to like or dislike a song.
-![](https://i.imgur.com/wXo9BWe.png)
+![](https://i.imgur.com/iovpKjJ.png)
 
-### 3.4. Comments
+### 3.5. Comments
 #### The user will be able to comment on a song. Comments will be scolled vertically.
-![](https://i.imgur.com/mr3zs7j.png)
+![](https://i.imgur.com/yCxrODD.png)
