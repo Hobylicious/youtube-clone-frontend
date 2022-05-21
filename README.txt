@@ -1,4 +1,4 @@
-# youtube-clone-frontend
+# Youtube-Clone-Frontend
 
 ------------
 ##The project has 2 parts: the Backend and the Frontend.
@@ -56,6 +56,6 @@
 #### The user will be able able to like or dislike a song.
 ![](https://i.imgur.com/wXo9BWe.png)
 
-### 3.4. Comments
+### 3.4. Comment
 #### The user will be able to comment on a song. Comments will be scolled vertically.
 ![](https://i.imgur.com/mr3zs7j.png)
