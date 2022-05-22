@@ -35,7 +35,7 @@
 
 ------------
 ## 3. Songs Player
-#### The user will be able to play songs in the app.
+#### The user will be able to search and play songs in the app.
 ![](https://i.imgur.com/RvgmVuX.png)
 
 #### -  The user will be able to see the history of played songs,
