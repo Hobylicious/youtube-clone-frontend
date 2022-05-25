@@ -1,0 +1,69 @@
+.video-player-body {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.form {
+  justify-content: center;
+  display: flex;
+}
+
+/* video window */
+.video-window {
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+}
+
+/* Input box */
+.input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 45px;
+  height: 20px;
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+transform: translate(-630px, 10px);
+  color: rgb(30, 7, 244);
+
+}
+
+.ytp-menuitem-label {
+  text-align: center;
+  font-size: px;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: rgb(153, 175, 179);
+}

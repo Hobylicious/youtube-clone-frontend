@@ -1,0 +1,60 @@
+.video-player-body {
+  width: 100%;
+}
+
+.form {
+  justify-content: center;
+  display: flex;
+}
+
+/* video window */
+.video-window {
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+}
+
+/* Input box */
+.input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 15px;
+  height: 20px;
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+transform: translate(-px, 10px);
+  color: rgb(30, 7, 244);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: rgb(153, 175, 179);
+}

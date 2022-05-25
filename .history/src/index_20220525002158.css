@@ -1,0 +1,79 @@
+.video-player-body {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.form {
+  justify-content: center;
+  display: flex;
+}
+
+/* video window */
+.video-window {
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+}
+
+/* Input box */
+.input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 45px;
+  height: 20px;
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+transform: translate(-630px, 10px);
+  color: rgb(30, 7, 244);
+
+}
+
+.element.style {}
+
+.ytp-menuitem-label {
+  font-size: 118%;
+  font-weight: 500;
+}
+
+.ytp-menuitem-label {
+  padding-left: 0;
+}
+
+.ytp-menuitem-label {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: rgb(153, 175, 179);
+}
