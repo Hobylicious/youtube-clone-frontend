@@ -1,0 +1,49 @@
+This this the link to the youtube API
+
+https://developers.google.com/youtube/v3/docs/search/list?apix_params=%7B%22part%22%3A%5B%22snippet%22%5D%2C%22maxResults%22%3A1000000000%2C%22order%22%3A%22date%22%2C%22safeSearch%22%3A%22moderate%22%2C%22videoType%22%3A%22any%22%7D&apix=true
+
+
+I got the second API from here
+
+https://developers.google.com/youtube/v3/getting-started#quota
+
+
+To change quotas
+
+https://console.cloud.google.com/iam-admin/quotas?project=my-project-244934&pageState=(%22allQuotasTable%22:(%22p%22:1))
+
+
+
+
+
+export default function VideoWindow({ videoId, videoLink, videoStat }) {
+
+	//  Declare a place holder for the video before loading a new outline
+	const [video, setVideo] = useState(`https://www.youtube.com/watch?v=wM7zqDG5Iws`)
+
+	const url = `https://www.youtube.com/watch?v=${videoId}`
+
+	setVideo(url)
+
+	// console.log(video)
+	return (
+		// <div className='video-window'
+		<div>
+			<ReactPlayer url={url} />
+		</div>
+
+	)
+}
+
+
+
+Request another API key
+
+https://console.cloud.google.com/apis/library/youtube.googleapis.com?project=project4&organizationId=0
+
+or
+
+https://console.cloud.google.com/cloud-resource-manager?previousPage=%2Fapis%2Flibrary%2Fyoutube.googleapis.com%3Fproject%3Dproject4%26organizationId%3D0&organizationId=0
+
+
+API = AIzaSyAhAd-lqDEXtqlSEK6HAIKpBOdfqc4VQvA

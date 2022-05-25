@@ -1,0 +1,71 @@
+.video-player-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+/* video window */
+.video-window {
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+}
+
+/* Input box */
+.input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 45px;
+  height: 20px;
+  margin-bottom: -15px
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+transform: translate(-630px, 10px);
+  color: rgb(30, 7, 244);
+
+}
+
+/* The replace button */
+.ytp-menuitem-label {
+  text-align: center;
+  font-size: 16px;
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+background-image:
