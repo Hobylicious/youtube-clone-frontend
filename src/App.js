@@ -1,13 +1,15 @@
 import './App.css';
-import HomePage from './Components/HomePage';
-import VideoPlayer from './Components/VideoPlayer';
+// import HomePage from './Components/HomePage';
+// import VideoPlayer from './Components/VideoPlayer';
+import Header from './Components/Header';
 
 
 function App() {
 
   return (
     <div className="App">
-      <VideoPlayer />
+        <Header/>
+      {/* <VideoPlayer /> */}
       {/* <HomePage /> */}
 
     </div>

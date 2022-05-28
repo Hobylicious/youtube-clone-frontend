@@ -1,0 +1,111 @@
+This is the database string below
+Usernames are Shindano, Brian, Francis
+Passwords are Shindano1, Brian1, Fancis1
+Should be able to just open Mongo compass or mongosh and plug it in
+mongodb+srv://<username>:<password>@cluster0.zrdag.mongodb.net/db-name?retryWrites=true&w=majority
+
+Auth0 Domain = dev-lhmvhvni.us.auth0.com
+Auth0 Client ID = BwYOxV0vRoviTd9gS1wJueRa8GfxRAmY
+
+---------------------------------------------------------------------
+src/index.js
+
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import {BrowserRouter as Router} from 'react-router-dom';
+import { Auth0Provider } from "@auth0/auth0-react";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+<Router>
+  <Auth0Provider
+    domain="dev-lhmvhvni.us.auth0.com"
+    clientId="BwYOxV0vRoviTd9gS1wJueRa8GfxRAmY"
+    redirectUri={window.location.origin}
+    >
+       <App />
+  </Auth0Provider>
+  </Router>
+);
+-------------------------------------------------------------------
+src/Components/UserProfile.jsx
+Can be added to Components but I need to continue working on it
+
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const Profile = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  console.log({user})
+
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
+  return (
+    isAuthenticated && (
+      <div>
+        <img src={user.picture} alt={user.name} />
+        <h2>{user.name}</h2>
+        <p>{user.email}</p>
+        {/* Same way we'll query data from the user object */}
+      </div>
+    )
+  );
+};
+
+export default Profile;
+-------------------------------------------------------------------
+src/Components/LogoutButton.jsx
+A logout button, it can be put anywhere
+
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const LogoutButton = () => {
+  const { logout } = useAuth0();
+
+  return (
+    <button className="btn btn-danger btn-block "onClick={() => logout({ returnTo: window.location.origin })}>
+      Log Out
+    </button>
+  );
+};
+
+export default LogoutButton;
+
+-------------------------------------------------------------------
+src/Components/LoginButton.jsx
+Login button to put anywhere
+
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+
+const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return <button className="btn btn-primary btn-block" onClick={() => loginWithRedirect()}>Log In</button>;
+};
+
+export default LoginButton;
+-------------------------------------------------------------------
+src/Components/AuthButton.jsx
+This one probably makes more sense to use but you have to have Login Logout
+components for this to work. It just toggle between the two by state using Auth0s hooks
+
+import React from 'react';
+
+import LoginButton from './Login';
+import LogoutButton from './Logout';
+
+import { useAuth0 } from '@auth0/auth0-react';
+
+const AuthenticationButton = () => {
+  const { isAuthenticated } = useAuth0();
+
+  return isAuthenticated ? <LogoutButton /> : <LoginButton />;
+};
+
+export default AuthenticationButton;
+-------------------------------------------------------------------
