@@ -1,0 +1,84 @@
+.video-player-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+/* video window */
+.video-window {
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+}
+
+/* Input box */
+/* .input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 45px;
+  height: 20px;
+  margin-bottom: -15px
+} */
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+  transform: translate(-630px, 10px);
+  color: rgb(30, 7, 244);
+}
+
+/* The replace button */
+.ytp-menuitem-label {
+  text-align: center;
+  font-size: 16px;
+  width: 50px;
+}
+
+/* i frame */
+iframe {
+  height: 80vh;
+  width: 70vw;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  transform: translateX(-13.6vw)
+}
+
+/* Videos container */
+/* .videosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 639px;
+  max-height: 220px;
+  margin-left: 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+} */
+
+.videosContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  max-height: 40vh;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Remove the verticale scroll bar */
+.videosContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.single-card {
+  margin-right: 5.8px;
+  border-radius: 20px;
+}
+

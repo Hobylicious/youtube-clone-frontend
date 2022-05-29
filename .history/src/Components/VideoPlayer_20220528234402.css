@@ -1,0 +1,35 @@
+
+.send-button-videoPlayer {
+	background: #17f;
+	color: #fff;
+	font: inherit;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	padding: 0.5em 1.5em;
+}
+
+/* Form container */
+.form-videoPlayer{
+	margin-top: 20px;
+}
+
+/* Videos container */
+.videosContainer-videoPlayer {
+	position: relative;
+	left: -32vw;
+	top: 80vh;
+
+	justify-content: center;
+	column-gap: 5px;
+
+	
+	margin-top: 10px;
+}
+
+
+
+
+body {
+	background-color: rgb(7, 7, 7)
+}
