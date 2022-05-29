@@ -1,0 +1,43 @@
+import React from 'react'
+// import ReactPlayer from 'react-player'
+// import { ImLoop } from "react-icons/im";
+
+
+export default function VideoWindow({ videos, suggestedVideos }) {
+
+	// console.log(videoId)
+
+	let url = '';
+
+	// Put a video video holder if the user has not submitted a request for video.
+	if (videos.length > 1) {
+		url = `https://www.youtube.com/watch_popup?v=PkXxm2tCtgs`
+		return (
+			// <div className='video-window'
+			<>
+				{/* <embed src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=10" wmode="transparent" type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Keyboard Cat" /> */}
+
+				<iframe title='video' width="629.29" height="315" src={`https://www.youtube.com/watch_popup?v=PkXxm2tCtgs`} frameBorder="0" allowFullScreen></iframe>
+				{/* <button className='ytp-menuitem-label' ><ImLoop /></button> */}
+			</>
+		)
+	}
+
+	else {
+		url = `https://www.youtube.com/watch_popup?v=PkXxm2tCtgs`
+		return (
+			// <div className='video-window'
+			<>
+				
+				{/* <div >
+					<embed src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=1" wmode="transparent" type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Keyboard Cat" />
+				</div> */}
+				<div>
+					<iframe title='video' src={url} frameBorder="0" allowFullScreen></iframe>
+				</div>
+			</>
+		)
+	}
+
+
+}
