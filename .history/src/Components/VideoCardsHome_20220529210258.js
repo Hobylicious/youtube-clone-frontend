@@ -47,8 +47,7 @@ const VideoCardsHome = ({ videos, suggestedVideos }) => {
 									<p className='title' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }}>Title: {video.title}</p>
 									<a className='channel-id' href={`https://www.youtube.com/channel/${video.author.channelID}`} target='_blabk'>Channel: {video.author.name}</a>
 									<p className='views'>Views: {viewsFunc(video.views)}</p>
-									<p className='views'>Posted: {video.uploadedAt}</p>
-									<p className='views'>Duration: {video.duration}</p>
+									<p className='views'>Posted: {video.thumbnails.uploadedAt}</p>
 
 								</div>
 							</div>

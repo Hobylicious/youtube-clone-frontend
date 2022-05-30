@@ -48,7 +48,7 @@ const VideoCardsHome = ({ videos, suggestedVideos }) => {
 									<a className='channel-id' href={`https://www.youtube.com/channel/${video.author.channelID}`} target='_blabk'>Channel: {video.author.name}</a>
 									<p className='views'>Views: {viewsFunc(video.views)}</p>
 									<p className='views'>Posted: {video.uploadedAt}</p>
-									<p className='views'>Duration: {video.duration}</p>
+									<p className='views'>Duration: {video.}</p>
 
 								</div>
 							</div>

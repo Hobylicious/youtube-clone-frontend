@@ -69,7 +69,7 @@ function HomePage({ getIndex }) {
             params: { q: searchedString },
             headers: {
                 'X-RapidAPI-Host': 'youtube-search-results.p.rapidapi.com',
-                'X-RapidAPI-Key': '4d719e347bmsh86e4a7f3bf09869p194838jsn2fb81cca4e06'
+                'X-RapidAPI-Key': 4d719e347bmsh86e4a7f3bf09869p194838jsn2fb81cca4e06''
                     // '3770e327b9mshe824169e187eb01p1f9d89jsnc715f2939d91'
             }
         };

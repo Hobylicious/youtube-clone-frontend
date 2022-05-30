@@ -67,12 +67,12 @@ iframe {
   display: none;
 }
 
-/* Single card */
+/* Si */
 .single-card {
   text-justify: center;
   display: flex;
   align-items: center;
-  width: 430px;
+  width: 400px;
   height: 100px;
   background: #fff;
   padding: 0 4px;
@@ -160,7 +160,6 @@ iframe {
 /* Views */
 .views {
   font-size: 1px;
-  color: black;
 }
 
 /* Revove styles from the link */
