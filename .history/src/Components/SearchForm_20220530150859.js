@@ -35,14 +35,14 @@ const SearchForm = ({ searchedString, handleSubmit, handleChange }) => {
                         <div className='home-and-playlist-icons'>
                               <div>
                                     {/* Add a video to playlist icon */}
-                                    <MdPlaylistAdd className='addPlaylist-icon' />
+                              <MdPlaylistAdd className='addPlaylist-icon' />
 
-                                    {/* Home icon */}
-                                    <Link to='/'>
-                                          <ImHome3 className='home-icon' />
-                                    </Link>
+                              {/* Home icon */}
+                              <Link to='/'>
+                                    <ImHome3 className='home-icon' />
+                              </Link>
                               </div>
-
+                              
 
                         </div>
 

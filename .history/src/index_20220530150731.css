@@ -267,8 +267,8 @@ iframe {
 .home-and-playlist-icons{
   position: relative;
   left: -112vw;
-  top: -22px;
-  margin: 1;
+  top: -2px;
+  margin-left: 1vw;
 }
 
 body {
