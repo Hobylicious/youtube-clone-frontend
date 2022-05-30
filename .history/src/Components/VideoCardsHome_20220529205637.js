@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const VideoCardsHome = ({ videos, suggestedVideos }) => {
 
-	 console.log(videos)
+	console.log(suggestedVideos)
 
 	function viewsFunc(num) {
 		if (num < 1000) return num;
@@ -25,7 +25,7 @@ const VideoCardsHome = ({ videos, suggestedVideos }) => {
 	}
 
 	// This is for safety; if there is no result, just consolelog.
-	if (videos.length < 1) {
+	if (suggestedVideos.length < 1) {
 		console.log("No result found")
 	}
 
@@ -34,7 +34,7 @@ const VideoCardsHome = ({ videos, suggestedVideos }) => {
 	else {
 		return (
 			<div className="cards car" >
-				{videos.map((video, index) =>
+				{suggestedVideos.map((video, index) =>
 
 					video.type === 'video' && (
 						<Link className='link' to={`/videoPlayer/${video.id}`}>
@@ -46,9 +46,8 @@ const VideoCardsHome = ({ videos, suggestedVideos }) => {
 								<div className="video-description">
 									<p className='title' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }}>Title: {video.title}</p>
 									<a className='channel-id' href={`https://www.youtube.com/channel/${video.author.channelID}`} target='_blabk'>Channel: {video.author.name}</a>
-									<p className='views'>Views: {viewsFunc(video.views)}</p>
-									<p className='views'>Posted: {video.uploadedAt}</p>
-									<p className='views'>Duration: {video.duration}</p>
+									<p className='views'>Views: {viewsFunc(video.thumbnails.views)}</p>
+									<p className='views'>Posted: {video.thumbnails.uploadedAt}</p>
 
 								</div>
 							</div>
