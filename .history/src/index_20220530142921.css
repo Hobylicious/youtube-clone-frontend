@@ -207,10 +207,7 @@ iframe {
   gap: 5px;
 }
 
-/* Change like-icon color on hover */
-.like-icon:hover {
-  color: rgb(232, 241, 241);
-}
+
 
 /* Dislike-icon */
 .dislike-icon {
@@ -219,11 +216,6 @@ iframe {
   align-items: center;
   display: flex;
   gap: 5px;
-}
-
-/* Change Dislike-icon color on hover */
-.dislike-icon:hover {
-  color: rgb(232, 241, 241);
 }
 
 /* Dislikes container */
@@ -242,11 +234,6 @@ iframe {
   align-items: center;
   display: flex;
   gap: 5px;
-}
-
-/* Change like-icon color on hover */
-.add-to-playlist:hover {
-  color: rgb(232, 241, 241);
 }
 
 .like-dislike-playlist-container {

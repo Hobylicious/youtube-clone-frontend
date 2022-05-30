@@ -244,11 +244,6 @@ iframe {
   gap: 5px;
 }
 
-/* Change like-icon color on hover */
-.add-to-playlist:hover {
-  color: rgb(232, 241, 241);
-}
-
 .like-dislike-playlist-container {
   width: 82vw;
   border-radius: 30px;

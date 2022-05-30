@@ -99,10 +99,10 @@ function VideoPlayer() {
         });
     }
 
-    // This function gets the serched id and pass it the function
+    // This function gets the serched id
     useEffect(() => {
         getSearchedId(id)
-    }, [])
+    }, [id])
 
     // Provide the searched string to the yotube API.
     async function getSearchedId(id) {

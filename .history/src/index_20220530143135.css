@@ -245,7 +245,7 @@ iframe {
 }
 
 /* Change like-icon color on hover */
-.add-to-playlist:hover {
+.like-icon:hover {
   color: rgb(232, 241, 241);
 }
 

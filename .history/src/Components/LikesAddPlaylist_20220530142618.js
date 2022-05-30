@@ -38,7 +38,7 @@ function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLik
 			</div>
 
 			<div className='add-to-playlist'>
-				<BiAddToQueue className='add-to-playlist-icon' onClick={() => arrayPlaylistFunc(id)
+				<BiAddToQueue className='add-to-playlist-ico' onClick={() => arrayPlaylistFunc(id)
 				} />
 				Add to playlist
 			</div>
