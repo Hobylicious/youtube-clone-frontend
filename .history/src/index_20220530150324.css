@@ -27,6 +27,8 @@
   display: flex;
   margin-top: 5px;
   margin-bottom: 17px;
+
+
 }
 
 /* Home icon */
@@ -265,10 +267,10 @@ iframe {
 }
 
 .home-and-playlist-icons{
-  position: relative;
-  left: -112vw;
-  top: -22px;
-  margin: 1;
+  position: absolute;
+  left: 2.5vw;
+  top: -0px;
+  margin-left: 1vw;
 }
 
 body {

@@ -19,7 +19,7 @@
   border-radius: 20px;
   margin-bottom: 2px;
   margin-top: 10px;
-  gap: 10vw;
+  gap: 10px;
 }
 
 .form {
@@ -27,6 +27,8 @@
   display: flex;
   margin-top: 5px;
   margin-bottom: 17px;
+  width: 50px;
+
 }
 
 /* Home icon */
@@ -48,7 +50,7 @@
 
 /* Input box */
 .input-rounded {
-  width: 40vw;
+  width: 400px;
   border-radius: 20px;
   padding-left: 45px;
   height: 25px;
@@ -69,7 +71,7 @@
 .search-icon-and-input-box {
   justify-content: center;
   display: flex;
-  padding: 0 40vw;
+  padding: 0 40px;
 }
 
 /* i frame */
@@ -205,11 +207,6 @@ iframe {
   gap: 5px;
 }
 
-/* Change like-icon color on hover */
-.like-icon:hover {
-  color: rgb(232, 241, 241);
-}
-
 /* Dislike-icon */
 .dislike-icon {
   flex-direction: column;
@@ -217,11 +214,6 @@ iframe {
   align-items: center;
   display: flex;
   gap: 5px;
-}
-
-/* Change Dislike-icon color on hover */
-.dislike-icon:hover {
-  color: rgb(232, 241, 241);
 }
 
 /* Dislikes container */
@@ -242,9 +234,10 @@ iframe {
   gap: 5px;
 }
 
-/* Change like-icon color on hover */
-.add-to-playlist:hover {
-  color: rgb(232, 241, 241);
+
+/* Change the color on hover */
+.add-to-playlist:ho {
+
 }
 
 .like-dislike-playlist-container {
@@ -257,18 +250,6 @@ iframe {
   position: relative;
   left: 3px;
   gap: 40px;
-}
-
-/* Change the color on hover */
-.add-to-playlist-icon:hover {
-  color: rgb(232, 241, 241);
-}
-
-.home-and-playlist-icons{
-  position: relative;
-  left: -112vw;
-  top: -22px;
-  margin: 1;
 }
 
 body {
