@@ -152,7 +152,6 @@ iframe {
   column-gap: 5px;
   height: 86vh;
   overflow-y: scroll;
-  overflow-x: hidden;
   margin-top: 6px;
 }
 
@@ -224,7 +223,7 @@ iframe {
 
 /* image in the the card for video player page */
 .iframe-player {
-  width: 710px;
+  width: 7px;
   height: 478px;
   border-radius: 15px;
   padding: 5px;
@@ -329,7 +328,7 @@ iframe {
 }
 
 .like-dislike-playlist-container {
-  width: 65vw;
+  width: 67vw;
   border-radius: 30px;
   border: 2px solid rgb(115, 129, 134);
   justify-content: center;
