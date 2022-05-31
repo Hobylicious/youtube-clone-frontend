@@ -12,10 +12,11 @@ console.log(useParams())
 
 	let url = '';
 
-	// If the user has not submitted a request for video, display a "Plese wait..." message.
+	// Put a video video holder if the user has not submitted a request for video.
 	if (videos.length < 1) {
 		url = `https://www.youtube.com/watch_popup?v=PkXxm2tCtgs`
 		return (
+	
 			<>
 				<div id="myModal" class="modal">
 					<div class="modal-content">
