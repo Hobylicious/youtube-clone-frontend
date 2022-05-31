@@ -68,7 +68,7 @@ function Auth() {
           onChange={(e) => setRegisterUsername(e.target.value)}
         />
         <input
-          placeholder="password"
+          placeholder="password" type="password"
           onChange={(e) => setRegisterPassword(e.target.value)}
         />
         <button onClick={register}>Register</button>
@@ -81,10 +81,13 @@ function Auth() {
           onChange={(e) => setLoginUsername(e.target.value)}
         />
         <input
-          placeholder="password"
+          placeholder="password" type="password"
           onChange={(e) => setLoginPassword(e.target.value)}
         />
-        <button onClick={login}>Login</button>
+        <button onClick={()=> {
+          login()
+          getUser()
+        }}>Login</button>
       </div>
         </Modal.Body>
         <Modal.Footer>
