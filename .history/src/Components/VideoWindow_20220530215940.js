@@ -12,7 +12,7 @@ console.log(useParams())
 
 	let url = '';
 
-	// If the user has not submitted a request for video, display a "Plese wait..." message.
+	// If the user has not submitted a request for video, d.
 	if (videos.length < 1) {
 		url = `https://www.youtube.com/watch_popup?v=PkXxm2tCtgs`
 		return (

@@ -23,7 +23,7 @@ const SearchForm = ({ searchedString, handleSubmit, handleChange }) => {
                                     type='text'
                                     name='SearchString'
                                     onChange={handleChange}
-                                    value={searchedString}
+                                    value={
                                     required
                               />
 

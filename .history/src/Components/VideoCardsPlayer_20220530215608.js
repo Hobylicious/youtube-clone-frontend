@@ -41,11 +41,16 @@ const VideoCards = ({ videos, suggestedVodeos }) => {
 		return (
 			<div className="cards car" >
 				{videos.map((video, index) =>
+
 					video.type === 'video' && (
 						<Link className='link' to={`/videoPlayer/${video.id}`}>
+
 							< div className='single-card' key={index} >
+
 								<img className='image' src={video.thumbnails[0].url} height='60' alt='images' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }} />
+
 								<div className="video-description">
+
 									<p className='title' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }}>Title: {video.title}</p>
 									<div className='logo-cannel-views-posted-duration' >
 										<div className='channel-info' >

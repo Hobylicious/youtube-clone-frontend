@@ -23,6 +23,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/error' element={<ErrorPage />} />
         <Route path='/videoPlayer/:id' element={<VideoPlayer getIndex={getIndex}/>} />
         {/* <Route path='/about' element={<About />} /> */}
       </Routes>
