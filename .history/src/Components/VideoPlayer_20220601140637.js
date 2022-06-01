@@ -96,11 +96,12 @@ function VideoPlayer() {
                 item.likes = false;
                 item.comments = [''];
                 item.myViews = null;
+                
             })
 
             setVideos(response.data.items)
             setSuggestedVodeos(response.data.refinements)
-            // console.log(response.data.items[0])
+            console.log(response.data.items[0])
 
         }).catch(function (error) {
             console.error(error);
