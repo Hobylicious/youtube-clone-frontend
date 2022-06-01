@@ -9,9 +9,9 @@ import { useParams } from 'react-router-dom';
 
 
 function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLikeCount, views }) {
-
+	
 	let { name } = useParams()
-	console.log(views)
+console.log(views)
 
 	let { id } = useParams();
 
@@ -26,7 +26,7 @@ function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLik
 		<div className='like-dislike-playlist-container'>
 
 			<div className='views-container'>
-				<p>{views}</p>
+				<p>{vie}</p>
 				<div className='views-icon' >
 					<ImEye className='eye' />
 					Views
@@ -35,7 +35,7 @@ function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLik
 
 			<div className='likes-container'>
 				<div className='like-icon'>
-					<FcLike onClick={() => { increment() }} />
+					<FcLike onClick={ () => { increment()}} />
 					Like
 				</div>
 			</div>
@@ -59,7 +59,7 @@ function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLik
 				} />
 				Comments
 			</div>
-
+			
 
 		</div>
 	)
