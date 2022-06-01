@@ -405,16 +405,6 @@ div .eye {
   color: rgb(232, 241, 241);
 }
 
-.home-hisotry-playlist-icons {
-  position: relative;
-  left: -112vw;
-  top: -22px;
-  margin: 1;
-
-  justify-content: center;
-  gap: 2px;
-  
-}
 
 /* logo-cannel-views-posted-duration */
 .logo-cannel-views-posted-duration {
