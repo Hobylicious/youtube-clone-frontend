@@ -6,7 +6,8 @@ import SearchForm from './SearchForm';
 // This component receives two objects: videoId has thumbnails and and videoIds..., and videos has statics information like views count, likes, dislikes...
 const VideoCards = ({ videos, suggestedVodeos }) => {
 
-	console.log(videos)
+	console.log(
+ci)
 
 	// This function formats views to K, M...
 	function viewsFunc(num) {

@@ -1,17 +1,14 @@
 import React, { useEffect } from 'react'
 import { BsHandThumbsUpFill, BsHandThumbsDownFill } from "react-icons/bs";
 import { BiAddToQueue } from "react-icons/bi";
-import { FcDislike, FcLike, } from "react-icons/fc";
-import { MdOutlineAddComment } from "react-icons/md";
-import { ImEye } from "react-icons/im";
 import { useParams } from 'react-router-dom';
 
 
 
-function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLikeCount, views }) {
-
+function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLikeCount }) {
+	
 	let { name } = useParams()
-	// console.log(views)
+	// console.log(name)
 
 	let { id } = useParams();
 
@@ -22,28 +19,23 @@ function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLik
 		}
 	}, [id])
 
+
 	return (
 		<div className='like-dislike-playlist-container'>
 
-			<div className='views-container'>
-				<p>{views}</p>
-				<div className='views-icon' >
-					<ImEye className='eye' />
-					Views
-				</div>
-			</div>
-
 			<div className='likes-container'>
 				<div className='like-icon'>
-					<FcLike onClick={() => { increment() }} />
+					<BsHandThumbsUpFill onClick={ () => { increment()}} />
 					Like
 				</div>
+				{/* <p>Num</p>
+				<p><BsHandThumbsUpFill className='likes-icon' />Like</p> */}
 			</div>
 
 			<div className='dislikes-container'>
 				<p>{likesDisLikeCount}</p>
 				<div className='dislike-icon'>
-					<FcDislike onClick={() => { decrement() }} />
+					<BsHandThumbsDownFill onClick={() => { decrement() }} />
 					Dislike
 				</div>
 			</div>
@@ -54,12 +46,7 @@ function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLik
 				Add to playlist
 			</div>
 
-			<div className='comments'>
-				<MdOutlineAddComment className='comments-icon' onClick={() => arrayPlaylistFunc(id)
-				} />
-				Comments
-			</div>
-
+			
 
 		</div>
 	)

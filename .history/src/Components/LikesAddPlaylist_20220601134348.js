@@ -11,7 +11,7 @@ import { useParams } from 'react-router-dom';
 function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDisLikeCount, views }) {
 
 	let { name } = useParams()
-	// console.log(views)
+	console.log(views)
 
 	let { id } = useParams();
 

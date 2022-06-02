@@ -26,7 +26,7 @@ function VideoPlayer() {
 
     // Declare a variable to hold the typed string
     const [searchedString, setSearchedString] = useState('');
-
+    
     // This array will hold added videos as playlist.
     let arrayPlaylist = [];
     const [addVideo, setAddedVideo] = useState('')
@@ -44,7 +44,7 @@ function VideoPlayer() {
     const decrement = () => {
         likesDisLikeCount === 1 ? setLikesDisLikeCount(likesDisLikeCount - 1) : setLikesDisLikeCount(likesDisLikeCount);
     }
-
+    
 
 
     // This function will add a video url to the array
@@ -89,18 +89,9 @@ function VideoPlayer() {
         };
 
         axios.request(options).then(function (response) {
-            // console.log(response.data.items)
-
-            // Insert addtional properties such as likes, comments,...
-            response.data.items.forEach(item => {
-                item.likes = false;
-                item.comments = [''];
-                item.myViews = null;
-            })
-
             setVideos(response.data.items)
             setSuggestedVodeos(response.data.refinements)
-            // console.log(response.data.items[0])
+            // console.log(response.data);
 
         }).catch(function (error) {
             console.error(error);
@@ -160,18 +151,18 @@ function VideoPlayer() {
                 />
 
                 {/* Display video cards */}
-                <VideoCardsPlayer videos={videos}
+                <VideoCardsPlayer  videos={videos}
                     suggestedVodeos={suggestedVideos}
                 />
             </div>
-
+            
             {/* The banner below the iframe containing Likes, dislikes, add to playlist... */}
-            <LikesAddPlaylist // {/* Pass the arraylist function to capture all added videos */}
-                arrayPlaylistFunc={arrayPlaylistFunc}
-                increment={increment}
-                decrement={decrement}
-                likesDisLikeCount={likesDisLikeCount}
-            />
+                <LikesAddPlaylist // {/* Pass the arraylist function to capture all added videos */}
+                    arrayPlaylistFunc={arrayPlaylistFunc}
+                    increment={increment}
+                    decrement={decrement}
+                    likesDisLikeCount={likesDisLikeCount}
+                />
 
         </div>
     )

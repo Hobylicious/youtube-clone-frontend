@@ -147,6 +147,7 @@ iframe {
 /* * Cards container */
 .cards-player {
   flex-direction: column;
+  justify-content: center;
   display: flex;
   column-gap: 5px;
   height: 86vh;
@@ -313,37 +314,6 @@ iframe {
   gap: 30px;
 }
 
-
-
-
-/* Views-icon */
-.views-icon {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 5px;
-}
-
-/* Change views-icon color on hover */
-.views-icon:hover {
-  color: rgb(232, 241, 241);
-}
-
-/* views container */
-.views-container {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 30px;
-}
-
-/* Change views-icon color */
-div .eye {
-  color: rgb(170, 29, 29);
-}
-
 /* Add to playlist container */
 .add-to-playlist {
   flex-direction: column;
@@ -355,36 +325,6 @@ div .eye {
 
 /* Change like-icon color on hover */
 .add-to-playlist:hover {
-  color: rgb(232, 241, 241);
-}
-
-/* Change add-to-playlist icon color */
-.add-to-playlist-icon {
-  color:rgb(245, 73, 11)
-}
-
-
-/* Comment container */
-.comments {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 5px;
-}
-
-/* Change comment-icon color on hover */
-.comments:hover {
-  color: rgb(232, 241, 241);
-}
-
-/* Change comment-icon color on hover */
-.comments-icon {
-  color: rgb(28, 227, 10);
-}
-
-/* Change comment-icon color on hover */
-.comments-icon:hover {
   color: rgb(232, 241, 241);
 }
 
@@ -405,15 +345,11 @@ div .eye {
   color: rgb(232, 241, 241);
 }
 
-.home-hisotry-playlist-icons {
+.home-and-playlist-icons {
   position: relative;
   left: -112vw;
   top: -22px;
   margin: 1;
-
-  justify-content: center;
-  gap: 2px;
-  
 }
 
 /* logo-cannel-views-posted-duration */
