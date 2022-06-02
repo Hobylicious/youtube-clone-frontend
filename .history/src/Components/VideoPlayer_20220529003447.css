@@ -1,0 +1,161 @@
+
+
+/* Form container */
+.form-player{
+	margin-top: 20px;
+}
+
+/* Videos container */
+.videosContainer-player {
+	position: relative;
+	left: -32vw;
+	top: 80vh;
+	justify-content: center;
+	column-gap: 5px;
+	margin-top: 10px;
+}
+
+.video-player-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-player {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	width: 50vw;
+}
+
+/* Input box */
+.input-rounded-player {
+	width: 574.3px;
+	border-radius: 20px;
+	padding-left: 45px;
+	height: 20px;
+	margin-bottom: -15px
+}
+
+/* The search icon */
+.searchIcon-player {
+	font-size: 20px;
+	transform: translate(-47vw, 10px);
+	color: rgb(30, 7, 244);
+}
+
+/* i frame */
+iframe {
+	height: 80vh;
+	width: 70vw;
+	border-radius: 20px;
+	transform: translateX(-13.6vw)
+}
+
+.videosContainer-player {
+	display: flex;
+	height: 10rem;	
+	flex-direction: column;
+	overflow: scroll;
+	transform: translate(30vw, -162vh);
+	position: relative;
+	left: 27vw;
+	padding: 5px 0px 0px 0px;
+	margin-bottom: -750px;
+}
+
+/* Remove the verticale scroll bar */
+.videosContainer-player::-webkit-scrollbar {
+	display: none;
+}
+
+.single-card-player {
+	text-justify: center;
+	display: flex;
+	align-items: center;
+	width: 290px;
+	height: 100px;
+	background: #fff;
+	padding-left: 4px;
+	border-radius: 6px;
+	box-shadow: 0px 1px 6px 2px #0002;
+	transition: transform 100ms ease-in-out;
+	margin-bottom: 5px;
+}
+
+.single-card-player:hover {
+	transform: scale(1.03);
+	background-color: rgb(204, 201, 155)
+}
+
+/* Text isine each card */
+.video-description-player {
+	margin-left: 2px;
+}
+
+/* Contains the iframe and all cards */
+.iframe-and-videoCards-container-player {
+	margin: 0 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* cards column  */
+.iframe-and-videoCards-container-player:nth-last-of-type(2) {
+	margin-left: 5px;
+}
+
+/* Title */
+.title-player {
+	font-size: 0.002vw;
+	font-weight: lighter;
+	color: rgb(248, 5, 5);
+}
+
+/* Just capitalize the first letter of the title */
+.title-player::first-letter {
+	text-transform: capitalize;
+}
+
+.image-player {
+	width: 100px;
+	height: 80px;
+	border-radius: 5px;
+	padding: 2px
+}
+
+/* Channel id */
+.channel-id-player {
+	font-size: 1px;
+	text-decoration: none;
+	color: black;
+	font-size: 1px;
+	position: relative;
+	top: -2px;
+}
+
+/* Channel id */
+.channel-id-player:hover {
+	color: blue;
+}
+
+.channel-id:first-letter {
+	text-transform: capitalize;
+}
+
+/* Views */
+.views-player {
+	font-size: 1px;
+}
+
+/* Revove styles from the link */
+.link-player{
+	text-decoration: none;
+}
+
+body {
+	margin: 0px 50px;
+	background-color: rgb(191, 183, 183);
+
+}
+

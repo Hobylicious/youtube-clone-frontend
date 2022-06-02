@@ -1,0 +1,46 @@
+
+.send-button-videoPlayer {
+	background: #17f;
+	color: #fff;
+	font: inherit;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	padding: 0.5em 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Videos container */
+.videosContainer {
+	position: relative;
+	left: -32vw;
+	top: 80vh;
+
+	justify-content: center;
+	column-gap: 5px;
+
+	display: flex;
+	margin-top: 10px;
+}
+
+body {
+	background-color: rgb(7, 7, 7)
+}

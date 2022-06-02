@@ -1,0 +1,122 @@
+.video-player-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 50vw;
+}
+
+/* video window */
+.video-window {
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+/* Input box */
+.input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 45px;
+  height: 20px;
+  margin-bottom: -15px
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+  transform: translate(-47vw, 10px);
+  color: rgb(30, 7, 244);
+}
+
+/* i frame */
+iframe {
+  margin-left: 5px;
+  height: 80vh;
+  width: 70vw;
+  border-radius: 20px;
+  transform: translateX(-13.6vw)
+}
+
+/* Videos container */
+/* .videosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 639px;
+  max-height: 220px;
+  margin-left: 3px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+} */
+
+.videosContainer {
+  display: flex;
+  max-height: 80vh;
+  flex-direction: column;
+  overflow-y: scroll;
+  transform: translate(30vw, -80vh);
+  margin-bottom: -750px;
+}
+
+/* Remove the verticale scroll bar */
+.videosContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.single-card {
+  
+}
+
+.single-card {
+  border-radius: 20px;
+  background: #fff;
+  padding: 1px;
+  box-shadow: 0px 2px 0px 0px #0002;
+  transition: transform 100ms ease-in-out;
+  padding-bottom: -5px;
+}
+
+.single-card:hover {
+  transform: scale(1.02);
+}
+
+.titleContainer{
+  text-justify: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 260px;
+  /* margin-top: -110px; */
+  width: 200px;
+}
+
+.video-description{
+  justify-content: center;
+  display:flex;
+
+    background: #fff;
+      padding: 1em;
+      border-radius: 6px;
+      box-shadow: 0px 1px 6px 2px #0002;
+      transition: transform 100ms ease-in-out;
+      display: grid;
+      grid-template:
+        "d i"
+        "m m";
+}
+
+/* .meta {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
+  font-size: 80%;
+  color: #555;
+} */
+

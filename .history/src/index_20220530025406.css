@@ -1,0 +1,229 @@
+/* Contains all elements in the body */
+.video-player-body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(137, 150, 155);
+  width: 84vw;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(115, 129, 134);
+  width: 82vw;
+  border-radius: 20px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 17px;
+  width: 50vw;
+}
+
+/* Home icon */
+.home-icon {
+  position: absolute;
+  left: 105px;
+  top: 25px;
+  font-size: 25px;
+  color: rgb(220, 229, 219);
+}
+
+.addPlaylist-icon {
+  position: absolute;
+  left: 145px;
+  top: 25px;
+  font-size: 25px;
+  color: rgb(220, 229, 219);
+}
+
+/* Input box */
+.input-rounded {
+  width: 574.3px;
+  border-radius: 20px;
+  padding-left: 45px;
+  height: 25px;
+  margin-bottom: -15px
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+  transform: translate(-507px, 7px);
+  color: rgb(30, 7, 244);
+}
+
+/* i frame */
+iframe {
+  height: 80vh;
+  width: 82.5vw;
+  border-radius: 20px;
+  position: relative;
+  left: 0.3vw;
+}
+
+/* Remove the verticale scroll bar */
+.videosContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Single card */
+.single-card {
+  text-justify: center;
+  display: flex;
+  align-items: center;
+  width: 430px;
+  height: 120px;
+  background: #fff;
+  padding: 0 2px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 2px #0002;
+  transition: transform 100ms ease-in-out;
+  margin-bottom: 5px;
+}
+
+/* Cards container */
+.cards {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 5px;
+  overflow-y: scroll;
+  height: 80vh;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Remove the verticale scroll bar */
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.single-card:hover {
+  transform: scale(1.03);
+  background-color: rgb(204, 201, 155)
+}
+
+/* Text inside each card */
+.video-description {
+  margin-left: 2px;
+  margin: auto;
+}
+
+/* Contains the iframe and all cards */
+.iframe-and-videoCards-container {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.title {
+  font-size: 0.002vw;
+  font-weight: lighter;
+  color: rgb(248, 5, 5);
+}
+
+/* Just capitalize the first letter of the title */
+.title::first-letter {
+  text-transform: capitalize;
+}
+
+/* image in the the card */
+.image {
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* Channel id */
+.channel-id {
+  font-size: 1px;
+  text-decoration: none;
+  color: black;
+  font-size: 1px;
+  position: relative;
+  top: -2px;
+}
+
+/* Channel id */
+.channel-id-:hover {
+  color: blue;
+}
+
+.channel-id:first-letter {
+  text-transform: capitalize;
+}
+
+/* Views */
+.views {
+  font-size: 1px;
+  color: black;
+}
+
+/* Revove styles from the link */
+.link {
+  text-decoration: none;
+}
+
+/* Likes container */
+.likes-container {
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+/* Like-icon */
+.like-icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+/* Dislike-icon */
+.dislike-icon{
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      gap: 5px;
+}
+
+/* Dislikes container */
+.dislikes-container {
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+/* Add to playlist container */
+.add-to-playlist {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+
+
+body {
+  background-color: rgb(5, 5, 5);
+}
