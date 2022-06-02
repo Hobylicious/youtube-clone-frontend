@@ -158,20 +158,20 @@ function VideoPlayer() {
                     videos={videos}
                     suggestedVodeos={suggestedVideos}
                 />
-
                 {/* Display video cards */}
                 <VideoCardsPlayer videos={videos}
                     suggestedVodeos={suggestedVideos}
                 />
+                
             </div>
 
             {/* The banner below the iframe containing Likes, dislikes, add to playlist... */}
-            <LikesAddPlaylist // {/* Pass the arraylist function to capture all added videos */}
+            {/* <LikesAddPlaylist  Pass the arraylist function to capture all added videos
                 arrayPlaylistFunc={arrayPlaylistFunc}
                 increment={increment}
                 decrement={decrement}
                 likesDisLikeCount={likesDisLikeCount}
-            />
+            /> */}
 
         </div>
     )
