@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  /* border-radius: 20px; */
+  background-color: rgb(137, 150, 155);
+  border-radius: 20px;
   height: 100vh;
   margin-top: 20px;
 }
@@ -16,9 +16,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgb(137, 150, 155); */
+  background-color: rgb(137, 150, 155);
   margin: -20px auto;
-  /* border-radius: 20px; */
+  border-radius: 20px;
   max-height: 100vh;
 
 }
@@ -52,7 +52,7 @@
 .home-icon {
   position: absolute;
   left: 105px;
-  top: 25px;
+  /* top: 25px; */
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
@@ -60,7 +60,7 @@
 .addPlaylist-icon {
   position: absolute;
   left: 145px;
-  top: 25px;
+  /* top: 25px; */
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
@@ -196,8 +196,8 @@ iframe {
 /* Title */
 .title {
   font-size: 0.8rem;
-  font-weight: lighter;
-  color: rgb(248, 5, 5);
+  font-weight: Bold;
+  color: rgb(0, 0, 0);
   margin-bottom: 3px;
 }
 
@@ -251,7 +251,7 @@ iframe {
 
 /* Views */
 .views {
-  font-size: 1px;
+  font-size: 0.6em;
   color: black;
 
 }
