@@ -5,9 +5,7 @@ import { useParams } from 'react-router-dom';
 
 
 
-function LikesAddPlaylist({ arrayPlaylistFunc, increment,
-     decrement = { decrement }
-                    likesDislikesCount = { likesDislikesCount } } ) {
+function LikesAddPlaylist({ arrayPlaylistFunc, increment, decrement, likesDislikesCount} ) {
 
 	let { id } = useParams();
 
