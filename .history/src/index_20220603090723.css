@@ -162,8 +162,8 @@ iframe {
   text-justify: center;
   align-items: center;
   display: flex;
-  width: 320px;
-padding: 2px 3px 0 6px;
+  width: 30vw;
+  padding: 10px;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 2px #0002;
@@ -286,11 +286,12 @@ padding: 2px 3px 0 6px;
   display: flex;
 }
 
-.brokenHeart{
-  margin-left:1vw
+.brokenHeart {
+  margin-left: 1vw
 }
+
 /* Likes and dislike container */
-.likes-dislikes-container{
+.likes-dislikes-container {
   display: flex;
   align-items: center;
 
@@ -366,7 +367,7 @@ padding: 2px 3px 0 6px;
   width: 58vw;
   border-radius: 15px;
   border: 2px solid rgb(115, 129, 134);
-  margin-left: -32vw;
+  margin-left: -34.5vw;
   margin-top: -10vh;
   flex-direction: row;
   justify-content: center;
@@ -374,7 +375,7 @@ padding: 2px 3px 0 6px;
   position: relative;
 }
 
-.viewsNumber-viewsIcon-viewText{
+.viewsNumber-viewsIcon-viewText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,8 +556,10 @@ padding: 2px 3px 0 6px;
 div.title-date-channel-container {
   width: 20vw;
   padding: 0 32px;
-  margin-top: -1vh;
-  margin-left: -8vw;
+  margin-top: -1.5vh;
+  margin-top: -0.5vh;
+  position: relative;
+  left: -5.8vw;
 }
 
 /* The avatarbelow the playing video */
@@ -573,11 +576,11 @@ div.title-date-channel-container {
   margin-left: 3vw;
 }
 
-  /* Add to playlist container */
-.add-to-playlist{
+/* Add to playlist container */
+.add-to-playlist {
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   gap: 1.5vh;
 }
 
@@ -607,12 +610,11 @@ justify-content: center;
   }
 }
 
-.icons-container{
+.icons-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  position:relative;
+  position: relative;
   left: 2.8vw;
-  gap: 1vw;
-  margin-right: -1vw;
+  gap: 2vw;
 }

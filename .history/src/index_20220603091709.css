@@ -162,8 +162,8 @@ iframe {
   text-justify: center;
   align-items: center;
   display: flex;
-  width: 320px;
-padding: 2px 3px 0 6px;
+  width: 30vw;
+  padding: 10px;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 2px #0002;
@@ -366,7 +366,7 @@ padding: 2px 3px 0 6px;
   width: 58vw;
   border-radius: 15px;
   border: 2px solid rgb(115, 129, 134);
-  margin-left: -32vw;
+  margin-left: -34.5vw;
   margin-top: -10vh;
   flex-direction: row;
   justify-content: center;
@@ -555,8 +555,10 @@ padding: 2px 3px 0 6px;
 div.title-date-channel-container {
   width: 20vw;
   padding: 0 32px;
-  margin-top: -1vh;
-  margin-left: -8vw;
+  margin-top: -1.5vh;
+  margin-top: -0.5vh;
+  position: relative;
+  
 }
 
 /* The avatarbelow the playing video */
@@ -613,6 +615,5 @@ justify-content: center;
   justify-content: space-evenly;
   position:relative;
   left: 2.8vw;
-  gap: 1vw;
-  margin-right: -1vw;
+  gap: 2vw;
 }
