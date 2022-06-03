@@ -1,0 +1,16 @@
+import React from 'react'
+
+function Comments() {
+    return (
+        <div className='comment-text-field'>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea rows="5"></textarea>
+            </div>
+            <button type="submit" class= btn-primary">Submit</button>
+        </div>
+
+    )
+}
+
+export default Comments
