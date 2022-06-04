@@ -1,10 +1,11 @@
 /* Contains all elements in the body for home page */
-.video-player-body {
+.video-player-body{
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(137, 150, 155);
+  border-radius: 20px;
   height: 100vh;
   margin-top: 20px;
 }
@@ -16,7 +17,8 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(137, 150, 155);
-  margin: -2px 2px;
+  margin: -20px auto;
+  border-radius: 20px;
   max-height: 100vh;
 
 }
@@ -24,30 +26,41 @@
 /* Form container */
 .form-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   background-color: rgb(115, 129, 134);
-  width: 77vw;
-  height: 10vh;
-  padding-top: 18px;
+  width: 82vw;
   border-radius: 20px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  gap: 10vw;
+  position: relative;  
+  top: 4px;
+}
+
+.form-container-player{
+  margin-bottom: 10px;
 }
 
 .form {
   justify-content: space-evenly;
   display: flex;
-  margin-top: 1vh;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 17px;
 }
 
 /* Home icon */
 .home-icon {
   position: absolute;
+  left: 105px;
+  top: 25px;
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
 
 .addPlaylist-icon {
+  position: absolute;
+  left: 145px;
+  top: 25px;
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
@@ -57,6 +70,7 @@
   width: 40vw;
   border-radius: 20px;
   padding-left: 45px;
+  height: 25px;
   margin-bottom: -15px
 }
 
@@ -65,9 +79,16 @@
   font-size: 20px;
   position: relative;
   left: 32px;
-  top: -31h;
+  top: 7px;
   /* transform: translate(-507px, 7px); */
   color: rgb(30, 7, 244);
+}
+
+/* search-icon-and-input-box */
+.search-icon-and-input-box {
+  justify-content: center;
+  display: flex;
+  padding: 0 40vw;
 }
 
 /* i frame */
@@ -76,9 +97,7 @@ iframe {
   width: 82.5vw;
   border-radius: 20px;
   position: relative;
-  left: 1vw;
-  margin-right: 1vw;
-  margin-left: -1vw;
+  left: 0.3vw;
 }
 
 /* Remove the verticale scroll bar */
@@ -94,7 +113,7 @@ iframe {
   width: 444px;
   height: 120px;
   background: #fff;
-  padding: 10px 2px 2px 2px;
+  padding: 0 2px;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 2px #0002;
   transition: transform 100ms ease-in-out;
@@ -127,26 +146,24 @@ iframe {
 
 /* * Cards container */
 .cards-player {
-  font-size: xx-small;
   flex-direction: column;
   display: flex;
   column-gap: 5px;
-  height: 80vh;
+  height: 86vh;
   overflow-y: scroll;
   overflow-x: hidden;
   margin-top: 6px;
-  margin-right: -3vw;
-  max-width: 100%;
 }
 
 /* Single card for video player*/
 .single-card-player {
+  font-size: 12px;
   text-justify: center;
-  align-items: center;
+  align-items: center;  
   display: flex;
-  width: 390px;
-  padding: 2px 3px 0 6px;
+  width: 300px;
   background: #fff;
+  padding: 0 2px;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 2px #0002;
   transition: transform 100ms ease-in-out;
@@ -165,24 +182,28 @@ iframe {
 
 /* Text inside each card */
 .video-description {
-  margin: 2px;
-  transform: translateY(4px)
+  margin-left: 2px;
 }
 
 /* Contains the iframe and all cards for home page */
 .iframe-and-videoCards-container {
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin: 0 5px;
   display: flex;
   flex-direction: row;
-  gap: 1vw;
+  gap: 3px;
 }
 
 /* Title */
 .title {
+  font-size: 0.002vw;
+  font-weight: lighter;
   color: rgb(248, 5, 5);
-  transform: translateY(-80px);
-margin-bottom: 20px;
+  margin-bottom: 3px;
+}
+
+/* Just capitalize the first letter of the title */
+.title::first-letter {
+  text-transform: capitalize;
 }
 
 /* image in the the card for home page */
@@ -202,10 +223,11 @@ margin-bottom: 20px;
 
 /* image in the the card for video player page */
 .iframe-player {
-  width: 60vw;
-  height: 70vh;
+  width: 710px;
+  height: 478px;
   border-radius: 15px;
-  margin-left: -5vw;
+  padding: 5px;
+  margin-left: -25px;
 }
 
 /* Channel id */
@@ -229,25 +251,14 @@ margin-bottom: 20px;
 
 /* Views */
 .views {
-  font-size: xx-small;
+  font-size: 1px;
   color: black;
-}
 
-/* views container */
-.views-container {
-  flex-direction: column;
-  gap: 1vw;
-  display: flex;
-}
-
-/* Eye icon */
-.eye {
-  margin-left: 1vw;
-  color: rgb(170, 29, 29);
 }
 
 /* views-posted-duration */
 .views-posted-duration {
+
   margin-top: 5px;
 }
 
@@ -256,34 +267,36 @@ margin-bottom: 20px;
   text-decoration: none;
 }
 
+/* Likes container */
+.likes-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+/* Like-icon */
+.like-icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
 /* Change like-icon color on hover */
 .like-icon:hover {
   color: rgb(232, 241, 241);
-}
-
-.likes-container {
-  flex-direction: column;
-  align-content: center;
-  gap: 2.5vh;
-  display: flex;
-}
-
-.brokenHeart {
-  margin-left: 1vw
-}
-
-/* Likes and dislike container */
-.likes-dislikes-container {
-  display: flex;
-  align-items: center;
 }
 
 /* Dislike-icon */
 .dislike-icon {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   display: flex;
-  gap: 0.5vh;
+  gap: 5px;
 }
 
 /* Change Dislike-icon color on hover */
@@ -291,23 +304,53 @@ margin-bottom: 20px;
   color: rgb(232, 241, 241);
 }
 
-.dislike {
-  flex-direction: column;
-  gap: 2.5vh;
-  display: flex;
-}
-
 /* Dislikes container */
 .dislikes-container {
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 2.5vh;
   display: flex;
+  gap: 30px;
+}
+
+
+
+
+/* Views-icon */
+.views-icon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
 }
 
 /* Change views-icon color on hover */
 .views-icon:hover {
   color: rgb(232, 241, 241);
+}
+
+/* views container */
+.views-container {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+/* Change views-icon color */
+div .eye {
+  color: rgb(170, 29, 29);
+}
+
+/* Add to playlist container */
+.add-to-playlist {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
 }
 
 /* Change like-icon color on hover */
@@ -317,11 +360,12 @@ margin-bottom: 20px;
 
 /* Change add-to-playlist icon color */
 .add-to-playlist-icon {
-  color: rgb(245, 73, 11)
+  color:rgb(245, 73, 11)
 }
 
+
 /* Comment container */
-.form-comment {
+.comments {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -345,23 +389,15 @@ margin-bottom: 20px;
 }
 
 .like-dislike-playlist-container {
-  height: 15vh;
-  border-radius: 15px;
-  margin-left: -24vw;
-  margin-top: -10vh;
-  flex-direction: row;
-  width: 50vw;
-  justify-content: space-evenly;
-  display: flex;
-  position: relative;
-  left: -3vw;
-}
-
-.viewsNumber-viewsIcon-viewText {
-  display: flex;
+  width: 65vw;
+  border-radius: 30px;
+  border: 2px solid rgb(115, 129, 134);
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  display: flex;
+  margin: 3px 1px -4px 0px;
+  margin-left: -320px;
+  margin-top: -50px;
+  gap: 40px;
 }
 
 /* Change the color on hover */
@@ -372,14 +408,18 @@ margin-bottom: 20px;
 .home-hisotry-playlist-icons {
   position: relative;
   left: -112vw;
-  top: -22vh;
-  margin: 1vw;
+  top: -22px;
+  margin: 1;
+
   justify-content: center;
-  gap: 2vw;
+  gap: 2px;
+  
 }
 
-.duration{
-  transform: translateY(-15px);
+/* logo-cannel-views-posted-duration */
+.logo-cannel-views-posted-duration {
+  justify-content: start;
+  display: flex;
 }
 
 /* Channel logo */
@@ -402,6 +442,13 @@ margin-bottom: 20px;
   gap: 5px;
 }
 
+body {
+  background-color: rgb(5, 5, 5);
+}
+
+
+
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -423,6 +470,7 @@ margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   display: block;
+
   justify-content: center;
   align-items: center;
   display: flex;
@@ -443,11 +491,11 @@ margin-bottom: 20px;
 
 .wait-page {
   animation: blinker 1s linear infinite;
-  margin: 0 10px;
-  /* Full width */
-  height: 100vh;
-  /* Full height */
-  text-align: center
+margin: 0 10px;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    text-align: center
 }
 
 @keyframes blinker {
@@ -477,6 +525,7 @@ margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   display: block;
+
   justify-content: center;
   align-items: center;
   display: flex;
@@ -504,178 +553,8 @@ margin-bottom: 20px;
   text-align: center
 }
 
-/* Comments form */
-.form-comment {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-  position: relative;
-  left: -15vw;
-  top: 12vh;
-  max-width: 3vw;
-}
-
-/* This is the title below the playing video */
-.playing-video-title {
-  font-size: xx-small;
-  width: 25vw;
-  padding: 0 2px;
-  font-weight: 900;
-  margin-top: 5px;
-}
-
-/* These is the uploaded date below the playing video */
-.playing-video-uploadedAt {
-  font-size: xx-small;
-  position: relative;
-  top: -16px;
-}
-
-/* Playing video's channel name */
-.title-date-channel-container {
-  width: 20vw;
-  margin-top: -1vh;
-  margin-left: -8vw;
-}
-
-/* The avatarbelow the playing video */
-.playing-video-avatar {
-  height: 12px;
-  height: 12px;
-  border-radius: 3px;
-  position: relative;
-  top: -30px;
-}
-
-/* Add-to-playlist icon */
-.add-to-playlist-icon {
-  margin-left: 3vw;
-}
-
-/* Add to playlist container */
-.add-to-playlist {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2vh;
-}
-
-/* These is the channel Avatar and channel title below the playing video */
-.playing-video-channel {
-  font-size: xx-small;
-  width: 35vw;
-  padding: 0 2px;
-  position: relative;
-  top: -30px;
-}
-
-/* Avatar and channel name */
-.avatar-channelName {
-  justify-content: center;
-  flex-direction: row;
-  display: flex;
-  width: 40vw;
-  position: relative;
-  left: -2vw;
-}
-
-.btn {
-  padding: 5px;
-  width: 50px
-}
-
 @keyframes blinker {
   0% {
     opacity: 0;
   }
-}
-
-.icons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  position: relative;
-  left: 2.8vw;
-  gap: 1vw;
-  margin-right: -1vw;
-}
-
-/* The user icon */
-.username-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 1vh;
-  position: relative;
-  top: 2vh;
-}
-
-/* User login status text */
-.username {
-  position: relative;
-  top: -8px;
-}
-
-/* User login status text */
-.usernameLogin {
-  position: relative;
-  top: -30px;
-}
-
-.home-and-playlist-icons {
-  display: flex;
-  gap: 4vw;
-  position: relative;
-  top: -8px;
-}
-
-/* Super user container */
-.user-super-container {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-}
-
-/* Close button */
-.close-Button {
-  width: 80px;
-}
-
-/* Save button */
-.save-your-login-button {
-  width: 150px;
-}
-
-/* login button */
-.login-button {
-  width: 130px;
-  padding: 20px;
-  position: relative;
-  top: 20vh;
-  left: 20vw;
-}
-
-/* modal window */
-.modal-content {
-  height: 400px;
-  width: 400px;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  display: flex;
-}
-
-.modal-header {
-  background-color: rgb(111, 106, 106);
-  height: 10vh;
-  gap: 15px;
-  display: flex;
-  position: relative;
-  top: 12px
-}
-
-button.btn-close {
-  background-color: rgb(0, 217, 255);
 }

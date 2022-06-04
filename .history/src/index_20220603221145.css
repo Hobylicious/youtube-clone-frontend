@@ -144,7 +144,7 @@ iframe {
   text-justify: center;
   align-items: center;
   display: flex;
-  width: 390px;
+  width: 350px;
   padding: 2px 3px 0 6px;
   background: #fff;
   border-radius: 6px;
@@ -165,8 +165,7 @@ iframe {
 
 /* Text inside each card */
 .video-description {
-  margin: 2px;
-  transform: translateY(4px)
+  margin-left: 3px;
 }
 
 /* Contains the iframe and all cards for home page */
@@ -181,8 +180,7 @@ iframe {
 /* Title */
 .title {
   color: rgb(248, 5, 5);
-  transform: translateY(-80px);
-margin-bottom: 20px;
+transform: translateY(-80px);
 }
 
 /* image in the the card for home page */
@@ -351,7 +349,7 @@ margin-bottom: 20px;
   margin-top: -10vh;
   flex-direction: row;
   width: 50vw;
-  justify-content: space-evenly;
+    justify-content: space-evenly;
   display: flex;
   position: relative;
   left: -3vw;
@@ -378,8 +376,11 @@ margin-bottom: 20px;
   gap: 2vw;
 }
 
-.duration{
-  transform: translateY(-15px);
+/* logo-cannel-views-posted-duration */
+.logo-cannel-views-posted-duration {
+  justify-content: center;
+  display: flex;
+  
 }
 
 /* Channel logo */
@@ -477,6 +478,7 @@ margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   display: block;
+
   justify-content: center;
   align-items: center;
   display: flex;
@@ -522,12 +524,13 @@ margin-bottom: 20px;
   width: 25vw;
   padding: 0 2px;
   font-weight: 900;
-  margin-top: 5px;
+  margin-top:5px ;
 }
 
 /* These is the uploaded date below the playing video */
 .playing-video-uploadedAt {
   font-size: xx-small;
+  padding: 0 2;
   position: relative;
   top: -16px;
 }
@@ -545,7 +548,7 @@ margin-bottom: 20px;
   height: 12px;
   border-radius: 3px;
   position: relative;
-  top: -30px;
+      top: -30px;
 }
 
 /* Add-to-playlist icon */
@@ -566,8 +569,8 @@ margin-bottom: 20px;
   font-size: xx-small;
   width: 35vw;
   padding: 0 2px;
-  position: relative;
-  top: -30px;
+    position: relative;
+      top: -30px;
 }
 
 /* Avatar and channel name */
@@ -639,17 +642,17 @@ margin-bottom: 20px;
 }
 
 /* Close button */
-.close-Button {
+.close-Button{
   width: 80px;
 }
 
 /* Save button */
-.save-your-login-button {
+.save-your-login-button{
   width: 150px;
 }
 
 /* login button */
-.login-button {
+.login-button{
   width: 130px;
   padding: 20px;
   position: relative;
@@ -658,7 +661,7 @@ margin-bottom: 20px;
 }
 
 /* modal window */
-.modal-content {
+.modal-content{
   height: 400px;
   width: 400px;
   justify-content: center;
@@ -667,15 +670,15 @@ margin-bottom: 20px;
   display: flex;
 }
 
-.modal-header {
+.modal-header{
   background-color: rgb(111, 106, 106);
   height: 10vh;
   gap: 15px;
   display: flex;
-  position: relative;
+  position:relative;
   top: 12px
 }
 
-button.btn-close {
+button.btn-close{
   background-color: rgb(0, 217, 255);
 }

@@ -36,10 +36,10 @@ const VideoCards = ({ videos, suggestedVodeos, viewsFunc }) => {
 												<img className='channel-logo' width='25' height='25' src={`${video.author.avatars[0].url}`} alt="" />
 												<a className='channel-id' href={`https://www.youtube.com/channel/${video.author.channelID}`} target='_blank' rel='noreferrer'>{video.author.name}</a>
 											</div>
-											<div className='video-description' >
+											<div className='' >
 												<p className='views'>Views: {viewsFunc(video.views)}</p>
 												<p className='views playing-video-uploadedAt'>Posted: {video.uploadedAt}</p>
-												<p className='views playing-video-uploadedAt duration'>Duration: {video.duration}</p>
+												<p className=' playing-video-uploadedAt'>Duration: {video.duration}</p>
 											</div>
 										</div>
 									</div>

@@ -182,7 +182,7 @@ iframe {
 .title {
   color: rgb(248, 5, 5);
   transform: translateY(-80px);
-margin-bottom: 20px;
+margin-bottom: 3;
 }
 
 /* image in the the card for home page */

@@ -144,7 +144,7 @@ iframe {
   text-justify: center;
   align-items: center;
   display: flex;
-  width: 390px;
+  width: 350px;
   padding: 2px 3px 0 6px;
   background: #fff;
   border-radius: 6px;
@@ -165,8 +165,7 @@ iframe {
 
 /* Text inside each card */
 .video-description {
-  margin: 2px;
-  transform: translateY(4px)
+  margin-left: 3px;
 }
 
 /* Contains the iframe and all cards for home page */
@@ -182,7 +181,6 @@ iframe {
 .title {
   color: rgb(248, 5, 5);
   transform: translateY(-80px);
-margin-bottom: 20px;
 }
 
 /* image in the the card for home page */
@@ -379,7 +377,7 @@ margin-bottom: 20px;
 }
 
 .duration{
-  transform: translateY(-15px);
+  transform: translateY(-5);
 }
 
 /* Channel logo */
