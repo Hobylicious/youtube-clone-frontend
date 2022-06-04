@@ -130,8 +130,9 @@ iframe {
 }
 
 
-/* * Cards container */
+/* Cards container */
 .cards-player {
+  font-size: xx-small;
   flex-direction: column;
   display: flex;
   column-gap: 5px;
@@ -144,11 +145,11 @@ iframe {
 
 /* Single card for video player*/
 .single-card-player {
-  font-size: 12px;
   text-justify: center;
   align-items: center;
   display: flex;
-  width: 320px;
+  width: 390px;
+  height: 140px;
   padding: 2px 3px 0 6px;
   background: #fff;
   border-radius: 6px;
@@ -169,7 +170,9 @@ iframe {
 
 /* Text inside each card */
 .video-description {
-  margin-left: 2px;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Contains the iframe and all cards for home page */
@@ -183,11 +186,16 @@ iframe {
 
 /* Title */
 .title {
+
+  color: rgb(248, 5, 5);
+transform: translateY(50px);
   font-size: 0.8rem;
   font-weight: Bold;
-  color: rgb(0, 0, 0);
   margin-bottom: 3px;
+
 }
+
+
 
 /* image in the the card for home page */
 .image {
@@ -219,8 +227,7 @@ iframe {
   text-decoration: none;
   color: black;
   font-size: 1px;
-  position: relative;
-  top: 2px;
+
 }
 
 /* Channel id */
@@ -356,7 +363,7 @@ iframe {
   margin-top: -10vh;
   flex-direction: row;
   width: 50vw;
-    justify-content: space-evenly;
+  justify-content: space-evenly;
   display: flex;
   /* margin: 3px 1px -4px 0px; */
   /* margin-left: -320px; */
@@ -378,10 +385,12 @@ iframe {
   gap: 2vw;
 }
 
-/* logo-cannel-views-posted-duration */
-.logo-cannel-views-posted-duration {
-  justify-content: center;
-  display: flex;
+.duration {
+  margin-top: -20px;
+}
+
+.duration-home{
+  margin-top: -18px;
 }
 
 /* Channel logo */
@@ -402,6 +411,7 @@ iframe {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  margin-top: 20px;
 }
 
 /* The Modal (background) */
@@ -479,7 +489,6 @@ iframe {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   display: block;
-
   justify-content: center;
   align-items: center;
   display: flex;
@@ -508,23 +517,179 @@ iframe {
 }
 
 
+/* Comments form */
+.form-comment {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  left: -15vw;
+  top: 12vh;
+  max-width: 3vw;
+}
+
+/* This is the title below the playing video */
+.playing-video-title {
+  font-size: xx-small;
+  width: 25vw;
+  padding: 0 2px;
+  font-weight: 900;
+  margin-top: 5px;
+}
+
+/* These is the uploaded date below the playing video */
+.playing-video-uploadedAt {
+  font-size: xx-small;
+  position: relative;
+  top: -16px;
+}
+
+/* Playing video's channel name */
+.title-date-channel-container {
+  width: 20vw;
+  margin-top: -1vh;
+  margin-left: -8vw;
+}
+
+/* The avatarbelow the playing video */
+.playing-video-avatar {
+  height: 12px;
+  height: 12px;
+  border-radius: 3px;
+  position: relative;
+  top: -30px;
+}
+
+/* Add-to-playlist icon */
+.add-to-playlist-icon {
+  margin-left: 3vw;
+}
+
+/* Add to playlist container */
+.add-to-playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+
+/* These is the channel Avatar and channel title below the playing video */
+.playing-video-channel {
+  font-size: xx-small;
+  width: 35vw;
+  padding: 0 2px;
+  position: relative;
+  top: -30px;
+}
+
+/* Avatar and channel name */
+.avatar-channelName {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  width: 40vw;
+  position: relative;
+  left: -2vw;
+}
+
+.btn {
+  padding: 5px;
+  width: 50px
+}
+
 @keyframes blinker {
   0% {
     opacity: 0;
   }
 }
 
-/* @media screen and (min-width:800px) and (max-width:999px){
-  body{
-    width:720px;
-  }
-  .like-dislike-playlist-container {
-    width:50vw;
-  }
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  left: 2.8vw;
+  gap: 1vw;
+  margin-right: -1vw;
 }
 
-@media screen and (min-width:600px) and (max-width:799px){
-  body{
-    width:600px;
-  }
-} */
+/* The user icon */
+.username-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  position: relative;
+  top: 2vh;
+}
+
+/* User login status text */
+.username {
+  position: relative;
+  top: -8px;
+}
+
+/* User login status text */
+.usernameLogin {
+  position: relative;
+  top: -30px;
+}
+
+.home-and-playlist-icons {
+  display: flex;
+  gap: 4vw;
+  position: relative;
+  top: -8px;
+}
+
+/* Super user container */
+.user-super-container {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+/* Close button */
+.close-Button {
+  width: 80px;
+}
+
+/* Save button */
+.save-your-login-button {
+  width: 150px;
+}
+
+/* login button */
+.login-button {
+  width: 130px;
+  padding: 20px;
+  position: relative;
+  top: 20vh;
+  left: 20vw;
+}
+
+/* modal window */
+.modal-content {
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  display: flex;
+}
+
+.modal-header {
+  background-color: rgb(111, 106, 106);
+  height: 10vh;
+  gap: 15px;
+  display: flex;
+  position: relative;
+  top: 12px
+}
+
+button.btn-close {
+  background-color: rgb(0, 217, 255);
+}
