@@ -3,6 +3,8 @@ import HomePage from './Components/HomePage';
 import VideoPlayer from './Components/VideoPlayer';
 import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+import Auth from './Components/Auth/Auth'
+
 
 
 
@@ -20,7 +22,7 @@ function App() {
     <div className="App">
       {/* <VideoPlayer /> */}
       {/* <HomePage /> */}
-
+      <Auth/>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/videoPlayer/:id' element={<VideoPlayer getIndex={getIndex}/>} />
