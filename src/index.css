@@ -43,11 +43,16 @@
 /* Home icon */
 .home-icon {
   position: absolute;
+  left: 105px;
+  /* top: 25px; */
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
 
 .addPlaylist-icon {
+  position: absolute;
+  left: 145px;
+  /* top: 25px; */
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
@@ -135,8 +140,7 @@ iframe {
   overflow-y: scroll;
   overflow-x: hidden;
   margin-top: 6px;
-  margin-right: -3vw;
-  max-width: 100%;
+  border-radius:10px;
 }
 
 /* Single card for video player*/
@@ -182,8 +186,13 @@ iframe {
 
 /* Title */
 .title {
+
   color: rgb(248, 5, 5);
 transform: translateY(50px);
+  font-size: 0.8rem;
+  font-weight: Bold;
+  margin-bottom: 3px;
+
 }
 
 
@@ -205,10 +214,11 @@ transform: translateY(50px);
 
 /* image in the the card for video player page */
 .iframe-player {
-  width: 60vw;
-  height: 70vh;
+  width: 65vw;
+  height: 478px;
   border-radius: 15px;
-  margin-left: -5vw;
+  padding: 5px;
+  margin-left: -10px;
 }
 
 /* Channel id */
@@ -231,7 +241,7 @@ transform: translateY(50px);
 
 /* Views */
 .views {
-  font-size: xx-small;
+  font-size: 0.6em;
   color: black;
 }
 
@@ -355,15 +365,10 @@ transform: translateY(50px);
   width: 50vw;
   justify-content: space-evenly;
   display: flex;
-  position: relative;
-  left: -3vw;
-}
-
-.viewsNumber-viewsIcon-viewText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  /* margin: 3px 1px -4px 0px; */
+  /* margin-left: -320px; */
+  /* margin-top: -50px; */
+  gap: 40px;
 }
 
 /* Change the color on hover */
@@ -511,6 +516,7 @@ transform: translateY(50px);
   text-align: center
 }
 
+
 /* Comments form */
 .form-comment {
   justify-content: center;
@@ -597,6 +603,7 @@ transform: translateY(50px);
     opacity: 0;
   }
 }
+
 
 .icons-container {
   display: flex;

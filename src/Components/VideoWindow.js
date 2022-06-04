@@ -1,14 +1,43 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect }from 'react'
 import { useParams } from 'react-router-dom';
 import LikesAddPlaylist from './LikesAddPlaylist';
 
 
+
 function VideoWindow({ videos, getPlayedVideoInfo, getVideoObject }) {
 
-	// To capture the information of each video playing video, "videos" will be filtered 
-	// to return the video that includes the id is equal to the played video's id.
-	const [playingVideoInfo, setPlayingVideoInfo] = useState(null);
-	// console.log(useParams())
+export default function VideoWindow({ videos }) {
+
+	let arrayPlaylist = [];
+    const [addVideo, setAddedVideo] = useState('')
+
+	    // This useState takes care of likes count. It will increament by 1 if Likes/thumbUp is clicked,
+    // and decreamentby 1 if dislike/thumbDown is clicked.
+    const [likesDisLikeCount, setLikesDisLikeCount] = useState(0);
+
+    // Increament likes count by 1
+    const increment = () => {
+        likesDisLikeCount === 0 ? setLikesDisLikeCount(likesDisLikeCount + 1) : setLikesDisLikeCount(likesDisLikeCount);
+    }
+
+    // icreament likes count by 1
+    const decrement = () => {
+        likesDisLikeCount === 1 ? setLikesDisLikeCount(likesDisLikeCount - 1) : setLikesDisLikeCount(likesDisLikeCount);
+    }
+
+
+
+    // This function will add a video url to the array
+    let arrayPlaylistFunc = (id) => {
+        arrayPlaylist.push(`https://www.youtube.com/watch_popup?v=${id}`)
+        // console.log(arrayPlaylist)
+    }
+
+
+// console.log(useParams())
+
+	//   console.log(videos[0])
+	const { id } = useParams()
 
 	let url = '';
 
@@ -38,12 +67,22 @@ function VideoWindow({ videos, getPlayedVideoInfo, getVideoObject }) {
 		url = `https://www.youtube.com/watch_popup?v=${id}`
 
 		return (
-			<iframe className='iframe-home iframe-player' title='video' src={url} frameBorder="0" allowFullScreen
-				getPlayedVideoInfo={getPlayedVideoInfo} />
+			<div className="videoComments">
+			<div>
+			<iframe className='iframe-home iframe-player' title='video' src={url} frameBorder="0" allowFullScreen />
+			</div>
+			<LikesAddPlaylist // {/* Pass the arraylist function to capture all added videos */}
+			arrayPlaylistFunc={arrayPlaylistFunc}
+			increment={increment}
+			decrement={decrement}
+			likesDisLikeCount={likesDisLikeCount}
+		/>
+		</div>
+	
+	
 		)
 	}
+
 }
 
-export default VideoWindow
-
-
+}
