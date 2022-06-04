@@ -4,6 +4,7 @@ import LikesAddPlaylist from './LikesAddPlaylist';
 
 
 
+function VideoWindow({ videos, getPlayedVideoInfo, getVideoObject }) {
 
 export default function VideoWindow({ videos }) {
 
@@ -40,17 +41,24 @@ export default function VideoWindow({ videos }) {
 
 	let url = '';
 
+	// console.log(videos[0])
+	const { id } = useParams()
+
+	const playedVideoInfo = videos.filter((video) => {
+		if (video.id === id) {
+			// console.log(video)
+			getVideoObject(video)
+		}
+	})
+
 	// If the user has not submitted a request for video, display a "Plese wait..." message.
 	if (videos.length < 1) {
-		url = `https://www.youtube.com/watch_popup?v=PkXxm2tCtgs`
 		return (
-			<>
-				<div id="myModal" class="modal">
-					<div className="modal-content">
-						<h1>Please wait...</h1>
-					</div>
+			<div className="myModal modal">
+				<div className="modal-content">
+					<h1>Please wait...</h1>
 				</div>
-			</>
+			</div>
 		)
 	}
 
@@ -75,5 +83,6 @@ export default function VideoWindow({ videos }) {
 		)
 	}
 
+}
 
 }

@@ -1,11 +1,10 @@
 /* Contains all elements in the body for home page */
-.video-player-body{
+.video-player-body {
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(137, 150, 155);
-  border-radius: 20px;
   height: 100vh;
   margin-top: 20px;
 }
@@ -17,8 +16,7 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(137, 150, 155);
-  margin: -20px auto;
-  border-radius: 20px;
+  margin: -2px 2px;
   max-height: 100vh;
 
 }
@@ -26,26 +24,20 @@
 /* Form container */
 .form-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: rgb(115, 129, 134);
-  width: 82vw;
+  width: 77vw;
+  height: 10vh;
+  padding-top: 18px;
   border-radius: 20px;
-  margin-bottom: 2px;
-  margin-top: 10px;
-  gap: 10vw;
-  position: relative;  
-  top: 4px;
-}
-
-.form-container-player{
-  margin-bottom: 10px;
 }
 
 .form {
   justify-content: space-evenly;
   display: flex;
-  margin-top: 5px;
-  margin-bottom: 17px;
+  margin-top: 1vh;
+  margin-bottom: 25px;
 }
 
 /* Home icon */
@@ -70,7 +62,6 @@
   width: 40vw;
   border-radius: 20px;
   padding-left: 45px;
-  height: 25px;
   margin-bottom: -15px
 }
 
@@ -79,16 +70,9 @@
   font-size: 20px;
   position: relative;
   left: 32px;
-  top: 7px;
+  top: -31h;
   /* transform: translate(-507px, 7px); */
   color: rgb(30, 7, 244);
-}
-
-/* search-icon-and-input-box */
-.search-icon-and-input-box {
-  justify-content: center;
-  display: flex;
-  padding: 0 40vw;
 }
 
 /* i frame */
@@ -97,7 +81,9 @@ iframe {
   width: 82.5vw;
   border-radius: 20px;
   position: relative;
-  left: 0.3vw;
+  left: 1vw;
+  margin-right: 1vw;
+  margin-left: -1vw;
 }
 
 /* Remove the verticale scroll bar */
@@ -113,7 +99,7 @@ iframe {
   width: 444px;
   height: 120px;
   background: #fff;
-  padding: 0 2px;
+  padding: 10px 2px 2px 2px;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 2px #0002;
   transition: transform 100ms ease-in-out;
@@ -149,7 +135,7 @@ iframe {
   flex-direction: column;
   display: flex;
   column-gap: 5px;
-  height: 86vh;
+  height: 80vh;
   overflow-y: scroll;
   overflow-x: hidden;
   margin-top: 6px;
@@ -160,11 +146,11 @@ iframe {
 .single-card-player {
   font-size: 12px;
   text-justify: center;
-  align-items: center;  
+  align-items: center;
   display: flex;
-  width: 300px;
+  width: 320px;
+  padding: 2px 3px 0 6px;
   background: #fff;
-  padding: 0 2px;
   border-radius: 6px;
   box-shadow: 0px 3px 6px 2px #0002;
   transition: transform 100ms ease-in-out;
@@ -188,10 +174,11 @@ iframe {
 
 /* Contains the iframe and all cards for home page */
 .iframe-and-videoCards-container {
-  margin: 0 5px;
+  margin-left: 1vw;
+  margin-right: 1vw;
   display: flex;
   flex-direction: row;
-  gap: 3px;
+  gap: 1vw;
 }
 
 /* Title */
@@ -200,11 +187,6 @@ iframe {
   font-weight: Bold;
   color: rgb(0, 0, 0);
   margin-bottom: 3px;
-}
-
-/* Just capitalize the first letter of the title */
-.title::first-letter {
-  text-transform: capitalize;
 }
 
 /* image in the the card for home page */
@@ -254,12 +236,23 @@ iframe {
 .views {
   font-size: 0.6em;
   color: black;
+}
 
+/* views container */
+.views-container {
+  flex-direction: column;
+  gap: 1vw;
+  display: flex;
+}
+
+/* Eye icon */
+.eye {
+  margin-left: 1vw;
+  color: rgb(170, 29, 29);
 }
 
 /* views-posted-duration */
 .views-posted-duration {
-
   margin-top: 5px;
 }
 
@@ -268,36 +261,34 @@ iframe {
   text-decoration: none;
 }
 
-/* Likes container */
-.likes-container {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 10px;
-}
-
-/* Like-icon */
-.like-icon {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 5px;
-}
-
 /* Change like-icon color on hover */
 .like-icon:hover {
   color: rgb(232, 241, 241);
+}
+
+.likes-container {
+  flex-direction: column;
+  align-content: center;
+  gap: 2.5vh;
+  display: flex;
+}
+
+.brokenHeart {
+  margin-left: 1vw
+}
+
+/* Likes and dislike container */
+.likes-dislikes-container {
+  display: flex;
+  align-items: center;
 }
 
 /* Dislike-icon */
 .dislike-icon {
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   display: flex;
-  gap: 5px;
+  gap: 0.5vh;
 }
 
 /* Change Dislike-icon color on hover */
@@ -305,53 +296,23 @@ iframe {
   color: rgb(232, 241, 241);
 }
 
+.dislike {
+  flex-direction: column;
+  gap: 2.5vh;
+  display: flex;
+}
+
 /* Dislikes container */
 .dislikes-container {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  gap: 2.5vh;
   display: flex;
-  gap: 30px;
-}
-
-
-
-
-/* Views-icon */
-.views-icon {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 5px;
 }
 
 /* Change views-icon color on hover */
 .views-icon:hover {
   color: rgb(232, 241, 241);
-}
-
-/* views container */
-.views-container {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 30px;
-}
-
-/* Change views-icon color */
-div .eye {
-  color: rgb(170, 29, 29);
-}
-
-/* Add to playlist container */
-.add-to-playlist {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 5px;
 }
 
 /* Change like-icon color on hover */
@@ -361,12 +322,11 @@ div .eye {
 
 /* Change add-to-playlist icon color */
 .add-to-playlist-icon {
-  color:rgb(245, 73, 11)
+  color: rgb(245, 73, 11)
 }
 
-
 /* Comment container */
-.comments {
+.form-comment {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -390,10 +350,13 @@ div .eye {
 }
 
 .like-dislike-playlist-container {
-  width: 65vw;
-  border-radius: 30px;
-  border: 2px solid rgb(115, 129, 134);
-  justify-content: center;
+  height: 15vh;
+  border-radius: 15px;
+  margin-left: -24vw;
+  margin-top: -10vh;
+  flex-direction: row;
+  width: 50vw;
+    justify-content: space-evenly;
   display: flex;
   /* margin: 3px 1px -4px 0px; */
   /* margin-left: -320px; */
@@ -409,17 +372,15 @@ div .eye {
 .home-hisotry-playlist-icons {
   position: relative;
   left: -112vw;
-  top: -22px;
-  margin: 1;
-
+  top: -22vh;
+  margin: 1vw;
   justify-content: center;
-  gap: 2px;
-  
+  gap: 2vw;
 }
 
 /* logo-cannel-views-posted-duration */
 .logo-cannel-views-posted-duration {
-  justify-content: start;
+  justify-content: center;
   display: flex;
 }
 
@@ -443,13 +404,6 @@ div .eye {
   gap: 5px;
 }
 
-body {
-  background-color: rgb(5, 5, 5);
-}
-
-
-
-
 /* The Modal (background) */
 .modal {
   display: none;
@@ -471,7 +425,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   display: block;
-
   justify-content: center;
   align-items: center;
   display: flex;
@@ -492,11 +445,11 @@ body {
 
 .wait-page {
   animation: blinker 1s linear infinite;
-margin: 0 10px;
-    /* Full width */
-    height: 100vh;
-    /* Full height */
-    text-align: center
+  margin: 0 10px;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  text-align: center
 }
 
 @keyframes blinker {

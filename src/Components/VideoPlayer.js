@@ -13,7 +13,6 @@ import LikeDislike from './LikeDislike';
 
 
 
-
 function VideoPlayer() {
 
     const { id } = useParams()
@@ -22,7 +21,7 @@ function VideoPlayer() {
     const [videos, setVideos] = useState([])
 
     // This holds seggested videos
-    const [suggestedVideos, setSuggestedVodeos] = useState([])
+    const [suggestedVideos, setSuggestedVideos] = useState([])
 
     // Declare a variable to hold the typed string
     const [searchedString, setSearchedString] = useState('');
@@ -35,6 +34,29 @@ function VideoPlayer() {
     // and decreamentby 1 if dislike/thumbDown is clicked.
     const [likesDisLikeCount, setLikesDisLikeCount] = useState(0);
 
+    const [videoObject, setVideoObject] = useState([]);
+
+
+
+
+    // This function formats views to K, M...
+    const viewsFunc = (num) => {
+        if (num < 1000) return num;
+        else if ((num > 999) && (num < 1000000)) {
+            num = (num / 1000).toFixed(1);
+            return num + 'K';
+        }
+        else if ((num >= 1000000) && (num < 1000000000)) {
+            num = (num / 1000000).toFixed(1);
+            return num + 'M';
+        }
+
+        else if ((num > 1000000000) && (num < 1000000000000)) {
+            num = (num / 1000000000).toFixed(1);
+            return num + 'B';
+        }
+    }
+
     // Increament likes count by 1
     const increment = () => {
         likesDisLikeCount === 0 ? setLikesDisLikeCount(likesDisLikeCount + 1) : setLikesDisLikeCount(likesDisLikeCount);
@@ -43,6 +65,13 @@ function VideoPlayer() {
     // icreament likes count by 1
     const decrement = () => {
         likesDisLikeCount === 1 ? setLikesDisLikeCount(likesDisLikeCount - 1) : setLikesDisLikeCount(likesDisLikeCount);
+    }
+
+
+    // Declare a function  that will be called to hold the playing video object
+    const getVideoObject = (video) => {
+        setVideoObject(video)
+        console.log(videoObject)
     }
 
 
@@ -99,7 +128,7 @@ function VideoPlayer() {
             })
 
             setVideos(response.data.items)
-            setSuggestedVodeos(response.data.refinements)
+            setSuggestedVideos(response.data.refinements)
             // console.log(response.data.items[0])
 
         }).catch(function (error) {
@@ -112,7 +141,7 @@ function VideoPlayer() {
         getSearchedId(id)
     }, [])
 
-    // Provide the searched string to the yotube API.
+    // Provide the searched string to the youtube API.
     async function getSearchedId(id) {
 
         const axios = require("axios");
@@ -129,7 +158,7 @@ function VideoPlayer() {
 
         axios.request(options).then(function (response) {
             setVideos(response.data.items)
-            setSuggestedVodeos(response.data.refinements)
+            setSuggestedVideos(response.data.refinements)
             // console.log(response.data);
 
         }).catch(function (error) {
@@ -156,11 +185,14 @@ function VideoPlayer() {
                 {/* Video window with suggested videos */}
                 <VideoWindow
                     videos={videos}
-                    suggestedVodeos={suggestedVideos}
+                    suggestedVideos={suggestedVideos}
+                    getVideoObject={getVideoObject}
+                    viewsFunc={viewsFunc}
                 />
                 {/* Display video cards */}
                 <VideoCardsPlayer videos={videos}
-                    suggestedVodeos={suggestedVideos}
+                    suggestedVideos={suggestedVideos}
+                    viewsFunc={viewsFunc}
                 />
                 
             </div>
