@@ -29,7 +29,7 @@ const VideoCards = ({ videos, suggestedVodeos, viewsFunc }) => {
 							< div key={video.id} className='single-card-player'  >
 								<img className='image-player' src={video.thumbnails[0].url} height='60' alt='images' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }} />
 								<div className="video-description">
-									<p className='title playing-video-uploadedAt' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }}>Title: {video.title.charAt(0).toUpperCase()}{video.title.substring(1).toLowerCase()}</p>
+									<p className='title playing-video-uploadedAt' onClick={() => { document.getElementsByTagName('iframe')[0].src = `https://www.youtube.com/watch_popup?v=${video.id}` }}>Title: {video.title.charAt(0).toUpperCase()}{video.title.substring(1).toUpperCase()}</p>
 									<div className='logo-cannel-views-posted-duration' >
 										<div className='channel-info' >
 											<div className='logo-channelName'>

@@ -177,11 +177,7 @@ iframe {
   gap: 1vw;
 }
 
-/* Title */
-.title {
-  color: rgb(248, 5, 5);
-  margin-bottom: 3px;
-}
+
 
 /* image in the the card for home page */
 .image {
