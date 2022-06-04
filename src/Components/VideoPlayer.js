@@ -189,24 +189,21 @@ function VideoPlayer() {
                     getVideoObject={getVideoObject}
                     viewsFunc={viewsFunc}
                 />
-
                 {/* Display video cards */}
                 <VideoCardsPlayer videos={videos}
                     suggestedVideos={suggestedVideos}
                     viewsFunc={viewsFunc}
                 />
+                
             </div>
 
             {/* The banner below the iframe containing Likes, dislikes, add to playlist... */}
-            <LikesAddPlaylist // {/* Pass the arraylist function to capture all added videos */}
+            {/* <LikesAddPlaylist  Pass the arraylist function to capture all added videos
                 arrayPlaylistFunc={arrayPlaylistFunc}
                 increment={increment}
                 decrement={decrement}
                 likesDisLikeCount={likesDisLikeCount}
-                getVideoObject={getVideoObject}
-                videoObject={videoObject}
-                viewsFunc={viewsFunc}
-            />
+            /> */}
 
         </div>
     )
