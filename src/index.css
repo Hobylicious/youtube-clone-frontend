@@ -43,11 +43,16 @@
 /* Home icon */
 .home-icon {
   position: absolute;
+  left: 105px;
+  /* top: 25px; */
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
 
 .addPlaylist-icon {
+  position: absolute;
+  left: 145px;
+  /* top: 25px; */
   font-size: 25px;
   color: rgb(220, 229, 219);
 }
@@ -125,7 +130,7 @@ iframe {
 }
 
 
-/* * Cards container */
+/* Cards container */
 .cards-player {
   font-size: xx-small;
   flex-direction: column;
@@ -135,8 +140,7 @@ iframe {
   overflow-y: scroll;
   overflow-x: hidden;
   margin-top: 6px;
-  margin-right: -3vw;
-  max-width: 100%;
+  border-radius:10px;
 }
 
 /* Single card for video player*/
@@ -144,7 +148,8 @@ iframe {
   text-justify: center;
   align-items: center;
   display: flex;
-  width: 320px;
+  width: 390px;
+  height: 140px;
   padding: 2px 3px 0 6px;
   background: #fff;
   border-radius: 6px;
@@ -165,7 +170,9 @@ iframe {
 
 /* Text inside each card */
 .video-description {
-  margin-left: 2px;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Contains the iframe and all cards for home page */
@@ -179,9 +186,15 @@ iframe {
 
 /* Title */
 .title {
+
   color: rgb(248, 5, 5);
+transform: translateY(50px);
+  font-size: 0.8rem;
+  font-weight: Bold;
   margin-bottom: 3px;
-}
+
+
+
 
 /* image in the the card for home page */
 .image {
@@ -200,10 +213,11 @@ iframe {
 
 /* image in the the card for video player page */
 .iframe-player {
-  width: 60vw;
-  height: 70vh;
+  width: 65vw;
+  height: 478px;
   border-radius: 15px;
-  margin-left: -5vw;
+  padding: 5px;
+  margin-left: -10px;
 }
 
 /* Channel id */
@@ -212,8 +226,7 @@ iframe {
   text-decoration: none;
   color: black;
   font-size: 1px;
-  position: relative;
-  top: 2px;
+
 }
 
 /* Channel id */
@@ -227,7 +240,7 @@ iframe {
 
 /* Views */
 .views {
-  font-size: xx-small;
+  font-size: 0.6em;
   color: black;
 }
 
@@ -349,17 +362,12 @@ iframe {
   margin-top: -10vh;
   flex-direction: row;
   width: 50vw;
-    justify-content: space-evenly;
+  justify-content: space-evenly;
   display: flex;
-  position: relative;
-  left: -3vw;
-}
-
-.viewsNumber-viewsIcon-viewText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  /* margin: 3px 1px -4px 0px; */
+  /* margin-left: -320px; */
+  /* margin-top: -50px; */
+  gap: 40px;
 }
 
 /* Change the color on hover */
@@ -376,10 +384,12 @@ iframe {
   gap: 2vw;
 }
 
-/* logo-cannel-views-posted-duration */
-.logo-cannel-views-posted-duration {
-  justify-content: center;
-  display: flex;
+.duration {
+  margin-top: -20px;
+}
+
+.duration-home{
+  margin-top: -18px;
 }
 
 /* Channel logo */
@@ -400,6 +410,7 @@ iframe {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  margin-top: 20px;
 }
 
 /* The Modal (background) */
@@ -477,7 +488,6 @@ iframe {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
   display: block;
-
   justify-content: center;
   align-items: center;
   display: flex;
@@ -505,6 +515,7 @@ iframe {
   text-align: center
 }
 
+
 /* Comments form */
 .form-comment {
   justify-content: center;
@@ -523,13 +534,12 @@ iframe {
   width: 25vw;
   padding: 0 2px;
   font-weight: 900;
-  margin-top:5px ;
+  margin-top: 5px;
 }
 
 /* These is the uploaded date below the playing video */
 .playing-video-uploadedAt {
   font-size: xx-small;
-  padding: 0 2;
   position: relative;
   top: -16px;
 }
@@ -547,7 +557,7 @@ iframe {
   height: 12px;
   border-radius: 3px;
   position: relative;
-      top: -30px;
+  top: -30px;
 }
 
 /* Add-to-playlist icon */
@@ -568,8 +578,8 @@ iframe {
   font-size: xx-small;
   width: 35vw;
   padding: 0 2px;
-    position: relative;
-      top: -30px;
+  position: relative;
+  top: -30px;
 }
 
 /* Avatar and channel name */
@@ -592,6 +602,7 @@ iframe {
     opacity: 0;
   }
 }
+
 
 .icons-container {
   display: flex;
@@ -641,17 +652,17 @@ iframe {
 }
 
 /* Close button */
-.close-Button{
+.close-Button {
   width: 80px;
 }
 
 /* Save button */
-.save-your-login-button{
+.save-your-login-button {
   width: 150px;
 }
 
 /* login button */
-.login-button{
+.login-button {
   width: 130px;
   padding: 20px;
   position: relative;
@@ -660,7 +671,7 @@ iframe {
 }
 
 /* modal window */
-.modal-content{
+.modal-content {
   height: 400px;
   width: 400px;
   justify-content: center;
@@ -669,15 +680,15 @@ iframe {
   display: flex;
 }
 
-.modal-header{
+.modal-header {
   background-color: rgb(111, 106, 106);
   height: 10vh;
   gap: 15px;
   display: flex;
-  position:relative;
+  position: relative;
   top: 12px
 }
 
-button.btn-close{
+button.btn-close {
   background-color: rgb(0, 217, 255);
 }

@@ -1,0 +1,690 @@
+/* Contains all elements in the body for home page */
+.video-player-body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(137, 150, 155);
+  height: 100vh;
+  margin-top: 20px;
+}
+
+/* Contains all elements in the body for player */
+.video-player-body-player {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(137, 150, 155);
+  margin: -2px 2px;
+  max-height: 100vh;
+
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(115, 129, 134);
+  width: 77vw;
+  height: 10vh;
+  padding-top: 18px;
+  border-radius: 20px;
+}
+
+.form {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 1vh;
+  margin-bottom: 25px;
+}
+
+/* Home icon */
+.home-icon {
+  position: absolute;
+  font-size: 25px;
+  color: rgb(220, 229, 219);
+}
+
+.addPlaylist-icon {
+  font-size: 25px;
+  color: rgb(220, 229, 219);
+}
+
+/* Input box */
+.input-rounded {
+  width: 40vw;
+  border-radius: 20px;
+  padding-left: 45px;
+  margin-bottom: -15px
+}
+
+/* The search icon */
+.searchIcon {
+  font-size: 20px;
+  position: relative;
+  left: 32px;
+  top: -31h;
+  /* transform: translate(-507px, 7px); */
+  color: rgb(30, 7, 244);
+}
+
+/* i frame */
+iframe {
+  height: 80vh;
+  width: 82.5vw;
+  border-radius: 20px;
+  position: relative;
+  left: 1vw;
+  margin-right: 1vw;
+  margin-left: -1vw;
+}
+
+/* Remove the verticale scroll bar */
+.videosContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Single card */
+.single-card {
+  text-justify: center;
+  display: flex;
+  align-items: center;
+  width: 444px;
+  height: 120px;
+  background: #fff;
+  padding: 10px 2px 2px 2px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 2px #0002;
+  transition: transform 100ms ease-in-out;
+  margin-bottom: 5px;
+}
+
+/* Cards container */
+.cards {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 5px;
+  overflow-y: scroll;
+  height: 80vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Remove the verticale scroll bar */
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.single-card:hover {
+  transform: scale(1.03);
+  background-color: rgb(204, 201, 155)
+}
+
+
+/* * Cards container */
+.cards-player {
+  font-size: xx-small;
+  flex-direction: column;
+  display: flex;
+  column-gap: 5px;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 6px;
+  margin-right: -3vw;
+  max-width: 100%;
+}
+
+/* Single card for video player*/
+.single-card-player {
+  text-justify: center;
+  align-items: center;
+  display: flex;
+  width: 320px;
+  padding: 2px 3px 0 6px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 3px 6px 2px #0002;
+  transition: transform 100ms ease-in-out;
+  margin-bottom: 5px;
+}
+
+/* Remove the verticale scroll bar */
+.cards-player::-webkit-scrollbar {
+  display: none;
+}
+
+.single-card-player:hover {
+  transform: scale(1.01);
+  background-color: rgb(204, 201, 155)
+}
+
+/* Text inside each card */
+.video-description {
+  margin-left: 2px;
+}
+
+.video-dercription{
+  flex-direction: column;
+  justify-content:
+}
+
+/* Contains the iframe and all cards for home page */
+.iframe-and-videoCards-container {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+/* Title */
+.title {
+  color: rgb(248, 5, 5);
+  margin-bottom: 3px;
+  position: relative;
+  top: ;
+}
+
+/* image in the the card for home page */
+.image {
+  width: 140px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* image in the the card for home page */
+.image-player {
+  width: 120px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+/* image in the the card for video player page */
+.iframe-player {
+  width: 60vw;
+  height: 70vh;
+  border-radius: 15px;
+  margin-left: -5vw;
+}
+
+/* Channel id */
+.channel-id {
+  font-size: 1px;
+  text-decoration: none;
+  color: black;
+  font-size: 1px;
+  position: relative;
+  top: 2px;
+}
+
+/* Channel id */
+.channel-id-:hover {
+  color: blue;
+}
+
+.channel-id:first-letter {
+  text-transform: capitalize;
+}
+
+/* Views */
+.views {
+  font-size: xx-small;
+  color: black;
+}
+
+/* views container */
+.views-container {
+  flex-direction: column;
+  gap: 1vw;
+  display: flex;
+}
+
+/* Eye icon */
+.eye {
+  margin-left: 1vw;
+  color: rgb(170, 29, 29);
+}
+
+/* views-posted-duration */
+.views-posted-duration {
+  margin-top: 5px;
+}
+
+/* Revove styles from the link */
+.link {
+  text-decoration: none;
+}
+
+/* Change like-icon color on hover */
+.like-icon:hover {
+  color: rgb(232, 241, 241);
+}
+
+.likes-container {
+  flex-direction: column;
+  align-content: center;
+  gap: 2.5vh;
+  display: flex;
+}
+
+.brokenHeart {
+  margin-left: 1vw
+}
+
+/* Likes and dislike container */
+.likes-dislikes-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Dislike-icon */
+.dislike-icon {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  gap: 0.5vh;
+}
+
+/* Change Dislike-icon color on hover */
+.dislike-icon:hover {
+  color: rgb(232, 241, 241);
+}
+
+.dislike {
+  flex-direction: column;
+  gap: 2.5vh;
+  display: flex;
+}
+
+/* Dislikes container */
+.dislikes-container {
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5vh;
+  display: flex;
+}
+
+/* Change views-icon color on hover */
+.views-icon:hover {
+  color: rgb(232, 241, 241);
+}
+
+/* Change like-icon color on hover */
+.add-to-playlist:hover {
+  color: rgb(232, 241, 241);
+}
+
+/* Change add-to-playlist icon color */
+.add-to-playlist-icon {
+  color: rgb(245, 73, 11)
+}
+
+/* Comment container */
+.form-comment {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+/* Change comment-icon color on hover */
+.comments:hover {
+  color: rgb(232, 241, 241);
+}
+
+/* Change comment-icon color on hover */
+.comments-icon {
+  color: rgb(28, 227, 10);
+}
+
+/* Change comment-icon color on hover */
+.comments-icon:hover {
+  color: rgb(232, 241, 241);
+}
+
+.like-dislike-playlist-container {
+  height: 15vh;
+  border-radius: 15px;
+  margin-left: -24vw;
+  margin-top: -10vh;
+  flex-direction: row;
+  width: 50vw;
+    justify-content: space-evenly;
+  display: flex;
+  position: relative;
+  left: -3vw;
+}
+
+.viewsNumber-viewsIcon-viewText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Change the color on hover */
+.add-to-playlist-icon:hover {
+  color: rgb(232, 241, 241);
+}
+
+.home-hisotry-playlist-icons {
+  position: relative;
+  left: -112vw;
+  top: -22vh;
+  margin: 1vw;
+  justify-content: center;
+  gap: 2vw;
+}
+
+/* logo-cannel-views-posted-duration */
+.logo-cannel-views-posted-duration {
+  justify-content: center;
+  display: flex;
+}
+
+/* Channel logo */
+.channel-logo {
+  background-image: none;
+  border-radius: 50px;
+}
+
+/* views, posted and duration info */
+.channel-info {
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+/* logo-channelName */
+.logo-channelName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  max-width: 100vw;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(137, 150, 155);
+  border-radius: 20px;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wait-page {
+  animation: blinker 1s linear infinite;
+  margin: 0 10px;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  text-align: center
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+}
+
+/* The Modal (background) */
+.modal-player {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  max-width: 100vw;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  display: block;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Modal Content/Box */
+.modal-content-player {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(137, 150, 155);
+  border-radius: 20px;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wait-page-player {
+  animation: blinker 1s linear infinite;
+  margin: 0 10px;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  text-align: center
+}
+
+/* Comments form */
+.form-comment {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  left: -15vw;
+  top: 12vh;
+  max-width: 3vw;
+}
+
+/* This is the title below the playing video */
+.playing-video-title {
+  font-size: xx-small;
+  width: 25vw;
+  padding: 0 2px;
+  font-weight: 900;
+  margin-top:5px ;
+}
+
+/* These is the uploaded date below the playing video */
+.playing-video-uploadedAt {
+  font-size: xx-small;
+  padding: 0 2;
+  position: relative;
+  top: -16px;
+}
+
+/* Playing video's channel name */
+.title-date-channel-container {
+  width: 20vw;
+  margin-top: -1vh;
+  margin-left: -8vw;
+}
+
+/* The avatarbelow the playing video */
+.playing-video-avatar {
+  height: 12px;
+  height: 12px;
+  border-radius: 3px;
+  position: relative;
+      top: -30px;
+}
+
+/* Add-to-playlist icon */
+.add-to-playlist-icon {
+  margin-left: 3vw;
+}
+
+/* Add to playlist container */
+.add-to-playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+
+/* These is the channel Avatar and channel title below the playing video */
+.playing-video-channel {
+  font-size: xx-small;
+  width: 35vw;
+  padding: 0 2px;
+    position: relative;
+      top: -30px;
+}
+
+/* Avatar and channel name */
+.avatar-channelName {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  width: 40vw;
+  position: relative;
+  left: -2vw;
+}
+
+.btn {
+  padding: 5px;
+  width: 50px
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  left: 2.8vw;
+  gap: 1vw;
+  margin-right: -1vw;
+}
+
+/* The user icon */
+.username-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  position: relative;
+  top: 2vh;
+}
+
+/* User login status text */
+.username {
+  position: relative;
+  top: -8px;
+}
+
+/* User login status text */
+.usernameLogin {
+  position: relative;
+  top: -30px;
+}
+
+.home-and-playlist-icons {
+  display: flex;
+  gap: 4vw;
+  position: relative;
+  top: -8px;
+}
+
+/* Super user container */
+.user-super-container {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+/* Close button */
+.close-Button{
+  width: 80px;
+}
+
+/* Save button */
+.save-your-login-button{
+  width: 150px;
+}
+
+/* login button */
+.login-button{
+  width: 130px;
+  padding: 20px;
+  position: relative;
+  top: 20vh;
+  left: 20vw;
+}
+
+/* modal window */
+.modal-content{
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  display: flex;
+}
+
+.modal-header{
+  background-color: rgb(111, 106, 106);
+  height: 10vh;
+  gap: 15px;
+  display: flex;
+  position:relative;
+  top: 12px
+}
+
+button.btn-close{
+  background-color: rgb(0, 217, 255);
+}

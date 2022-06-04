@@ -1,0 +1,17 @@
+This this the link to the youtube API
+
+I got the second API from here
+
+https://developers.google.com/youtube/v3/getting-started
+
+
+To change quotas
+
+https://console.cloud.google.com/iam-admin/quotas?project=my-project-244934&pageState=(%22allQuotasTable%22:(%22p%22:1))
+
+RAPID API
+https://rapidapi.com/hub
+https://rapidapi.com/marindelija/api/youtube-search-results/
+
+ API for Presentation: b05e2317d3msh31c93481f56b372p13e651jsn7e86a75c99f8
+ 
